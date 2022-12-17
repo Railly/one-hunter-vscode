@@ -1,10 +1,12 @@
 <p align="center">
+  <picture>
+    <img src="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png" height="128">
+  </picture>
   <h1 align="center">One Hunter Theme</h1>
-  <img src="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png" alt="Aura Theme" width="20%" />
 </p>
 
 <p align="center">
-A VSCode theme based on the Vercel Theme ▲ and One Dark Pro 🎨.
+A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
   <br><br>
 </p>
 
@@ -29,10 +31,8 @@ A VSCode theme based on the Vercel Theme ▲ and One Dark Pro 🎨.
 
 ## Supported Languages
 
-- JavaScript
-- TypeScript
-- JavaScript React
-- TypeScript React
+- JavaScript (React)
+- TypeScript (React)
 - HTML
 - CSS
 - JSON
@@ -47,7 +47,13 @@ A VSCode theme based on the Vercel Theme ▲ and One Dark Pro 🎨.
 
 If you want to contribute to this project, you can do so by forking the repository and submitting a pull request.
 
-Feel free to open an issue if you find a bug or have a suggestion.
+Feel free to open an issue if you find a bug or have a suggestion, but if you want to add support for a new language, please make sure to add a screenshot of the theme in action.
+
+Also, if you like this theme, please consider giving it a ⭐️
+
+## Author
+
+- [Railly Hugo](https://twitter.com/RaillyHugo)
 
 ## License
 
