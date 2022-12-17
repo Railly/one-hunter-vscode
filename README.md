@@ -1,16 +1,15 @@
-# one-hunter README
+# One Hunter Theme
 
-## Working with Markdown
+A VSCode theme based on the Vercel Theme and One Dark Pro.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+[image-1]: https://raw.githubusercontent.com/One-Hunter/one-hunter-theme/master/screenshots/one-hunter-theme.png
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+## Installation
 
-## For more information
+1. Open the **Extensions** sidebar in VS Code. `View → Extensions`
+2. Search for `One Hunter Theme`
+3. Click on **Install**
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## Language Support
 
-**Enjoy!**
+See
