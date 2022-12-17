@@ -1,0 +1,22 @@
+{
+  "name": "one-hunter",
+  "displayName": "One Hunter",
+  "description": "My new color theme",
+  "publisher": "RaillyHugo",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "One Hunter Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/One Hunter Theme-color-theme.json"
+      }
+    ]
+  }
+}

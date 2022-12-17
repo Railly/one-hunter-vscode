@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>My webpage</title>
+    <style>
+      body {
+        background-color: lightblue;
+      }
+      .heading {
+        font-size: 32px;
+        color: darkblue;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="heading">My webpage</h1>
+    <p data-info="some information">This is a paragraph of text.</p>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+    <script>
+      const heading = document.querySelector('.heading');
+      heading.addEventListener('click', () => {
+        alert('You clicked the heading!');
+      });
+    </script>
+  </body>
+</html>
