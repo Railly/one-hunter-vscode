@@ -1,5 +1,5 @@
 // Description: JavaScript demos
-function multiplyMatrix(a, b) {
+export function multiplyMatrix(a, b) {
     const result = [];
     for (let i = 0; i < a.length; i++) {
         result[i] = [];
@@ -20,7 +20,7 @@ function multiplyMatrix(a, b) {
  * @param {number} age
  */
 
-const arrowNameAge = (name, age) => {
+export const arrowNameAge = (name, age) => {
   for (let i = 0; i < 10; i++) {
     console.log(i);
   }
