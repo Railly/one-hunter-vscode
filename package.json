@@ -1,7 +1,7 @@
 {
   "name": "one-hunter",
   "displayName": "One Hunter",
-  "description": "My new color theme",
+  "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
   "publisher": "RaillyHugo",
   "version": "0.0.1",
   "engines": {
@@ -20,23 +20,6 @@
     ]
   },
   "icon": "icon.png",
-  "badges": [
-    {
-      "url": "https://vsmarketplacebadge.apphb.com/version/zhuangtongfa.Material-theme.svg",
-      "href": "https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme",
-      "description": "Extension version"
-    },
-    {
-      "url": "https://vsmarketplacebadge.apphb.com/installs/zhuangtongfa.Material-theme.svg",
-      "href": "https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme",
-      "description": "Extension installs"
-    },
-    {
-      "url": "https://vsmarketplacebadge.apphb.com/rating/zhuangtongfa.Material-theme.svg",
-      "href": "https://marketplace.visualstudio.com/items/zhuangtongfa.Material-theme",
-      "description": "Extension Rating"
-    }
-  ],
   "homepage": "https://github.com/Railly/one-hunter-vscode/blob/main/README.md",
   "bugs": {
     "url": "https://github.com/Railly/one-hunter-vscode/issues"
