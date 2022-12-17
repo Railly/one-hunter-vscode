@@ -19,7 +19,7 @@
       }
     ]
   },
-  "icon": "./icon.png",
+  "icon": "icon.png",
   "badges": [
     {
       "url": "https://vsmarketplacebadge.apphb.com/version/zhuangtongfa.Material-theme.svg",
