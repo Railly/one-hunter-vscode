@@ -1,9 +1,11 @@
 <p align="center">
-  <picture>
-    <source srcset="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png">
-    <img src="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png" height="128">
-  </picture>
-  <h1 align="center">One Hunter Theme</h1>
+  <a href="#">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png"/>
+      <img src="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png" height="128"/>
+    </picture>
+    <h1 align="center">One Hunter Theme</h1>
+  </a>
 </p>
 
 <p align="center">
