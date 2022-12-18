@@ -45,6 +45,7 @@ A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 - Python
 - Go
 - Rust
+- Prisma
 
 ## Contributing
 

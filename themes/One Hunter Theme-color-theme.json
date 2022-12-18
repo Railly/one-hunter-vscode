@@ -1376,12 +1376,34 @@
 				"foreground": "#50E3C2",
 			}
 		},
-	/* .env, ini */
+		/* .env, ini */
 		{
 			"scope": "keyword.other.definition.ini",
 			"settings": {
 				"foreground": "#53A1FA"
 			}
-		}
+		},
+		/* Prisma */
+		{
+			"name": "Prisma: Primitive",
+			"scope": "support.type.primitive.prisma",
+			"settings": {
+				"foreground": "#F9C35A"
+			}
+		},
+		{
+			"name": "Prisma: Constant",
+			"scope": "support.constant.constant.prisma",
+			"settings": {
+				"foreground": "#F4457D"
+			}
+		},
+		{
+			"name": "Prisma: Relation",
+			"scope": "variable.language.relations.prisma",
+			"settings": {
+				"foreground": "#50E3C2",
+			}
+		},
 	]
 }
