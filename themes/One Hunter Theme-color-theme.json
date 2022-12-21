@@ -943,7 +943,8 @@
 		},
 		{
 			"scope": [
-				"source.css.scss"
+				"source.css.scss",
+				"source.css",
 			],
 			"settings": {
 				"foreground": "#50E3C2",
@@ -1194,7 +1195,6 @@
 				"entity.name.tag.js.jsx",
 				"entity.name.tag.html",
 				"entity.name.tag.xml",
-				"entity.name.tag"
 			],
 			"settings": {
 				"foreground": "#F4457D",
