@@ -3,7 +3,7 @@
   "displayName": "One Hunter Theme",
   "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
   "publisher": "RaillyHugo",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -19,6 +19,16 @@
       }
     ]
   },
+  "keywords": [
+    "color-theme",
+    "theme",
+    "one hunter",
+    "hunter",
+    "one dark",
+    "one dark pro",
+    "vercel",
+    "vercel theme"
+  ],
   "icon": "icon.png",
   "homepage": "https://github.com/Railly/one-hunter-vscode/blob/main/README.md",
   "bugs": {
