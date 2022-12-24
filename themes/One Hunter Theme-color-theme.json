@@ -929,7 +929,14 @@
 			}
 		},
 		{
-			"scope": "keyword.operator.assignment",
+			"scope": [
+				"keyword.operator.assignment",
+				"keyword.operator.arithmetic",
+				"keyword.operator.bitwise",
+				"keyword.operator.relational",
+				"keyword.operator.increment",
+				"keyword.operator.decrement",
+			 ],
 			"settings": {
 				"foreground": "#53A1FA"
 			}
@@ -952,7 +959,9 @@
 			}
 		},
 		{
-			"scope": "entity.other.attribute-name",
+			"scope": [
+				"entity.other.attribute-name",
+				],
 			"settings": {
 				"foreground": "#F9C35A",
 				"fontStyle": ""
@@ -1153,6 +1162,7 @@
 		{
 			"scope": [
 				"variable.other.constant.property",
+				"keyword.operator.ternary",
 			],
 			"settings": {
 				"foreground": "#D582F2"

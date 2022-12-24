@@ -3,7 +3,7 @@
   "displayName": "One Hunter Theme",
   "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
   "publisher": "RaillyHugo",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "engines": {
     "vscode": "^1.74.0"
   },
