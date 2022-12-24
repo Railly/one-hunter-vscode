@@ -93,3 +93,32 @@ const myMap = new Map([
 const token = window.localStorage.getItem('token');
 
 const [a, b, c] = [1, 2, 3];
+
+module.exports = leftpad;
+
+function leftpad(str, len, ch) {
+  str = String(str);
+  var i = -1;
+
+  if (!ch && ch !== 0) ch = ' ';
+
+  len = len - str.length;
+
+  while (i++ < len) {
+    str = ch + str;
+  }
+  return str;
+}
+
+// example bitwise operator
+const x = 5;
+const y = 3;
+const z = a & b;
+const d = a | b;
+const e = a ^ b;
+const f = ~a;
+const g = a << b;
+const h = a >> b;
+const i = a >>> b;
+
+// example of destructuring
