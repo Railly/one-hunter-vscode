@@ -78,22 +78,5 @@
   },
   "dependencies": {
     "@types/vscode": "^1.74.0"
-  },
-  "badges": [
-    {
-      "url": "https://vsmarketplacebadges.dev/version/RaillyHugo-one-hunter.svg",
-      "href": "https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter",
-      "description": "Extension Version"
-    },
-    {
-      "url": "https://vsmarketplacebadges.dev/installs/RaillyHugo-one-hunter.svg",
-      "href": "https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter",
-      "description": "Installs"
-    },
-    {
-      "url": "https://vsmarketplacebadges.dev/rating/RaillyHugo-one-hunter.svg",
-      "href": "https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter",
-      "description": "Rating"
-    }
-  ]
+  }
 }

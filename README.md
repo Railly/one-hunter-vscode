@@ -13,18 +13,6 @@ A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
   <br><br>
 </p>
 
-<p align="center">
-  <a href="https://vscode.dev/theme/RaillyHugo.one-hunter">
-    <img src="https://img.shields.io/badge/preview%20in-vscode.dev-blue" alt="Preview in vscode.dev"/>
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter">
-    <img src="https://vsmarketplacebadge.apphb.com/version/RaillyHugo.one-hunter.svg" alt="Version"/>
-  </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter">
-    <img src="https://vsmarketplacebadge.apphb.com/installs/RaillyHugo.one-hunter.svg" alt="Installs"/>
-  </a>
-</p>
-
 ![image-1](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-theme.png)
 
 ## Installation
