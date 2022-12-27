@@ -35,7 +35,13 @@ A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 
 ## Screenshots
 
+### Classic
+
 ![image-2](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/classic.png)
+
+---
+
+### Material
 
 ![image-3](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/material.png)
 
