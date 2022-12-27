@@ -33,6 +33,12 @@ A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 2. Search for `one-hunter`
 3. Select `One Hunter Theme` and click **Install**
 
+## Screenshots
+
+![image-2](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/classic.png)
+
+![image-3](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/material.png)
+
 ## Roadmap
 
 - [ ] Add screenshots for all supported languages
