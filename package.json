@@ -15,9 +15,33 @@
       {
         "label": "One Hunter Theme",
         "uiTheme": "vs-dark",
-        "path": "./themes/One Hunter Theme-color-theme.json"
+        "path": "./themes/OneHunter-Classic-color-theme.json"
+      },
+      {
+        "label": "One Hunter Theme Material",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneHunter-Material-color-theme.json"
       }
     ]
+  },
+  "configuration": {
+    "title": "One Hunter Theme",
+    "properties": {
+      "one-hunter.editorTheme": {
+        "type": "string",
+        "default": "classic",
+        "markdownDescription": "%description.one-hunter.editorTheme%",
+        "enum": [
+          "classic",
+          "material"
+        ],
+        "enumDescriptions": [
+          "Classic theme",
+          "Material theme"
+        ],
+        "description": "Select the theme variant"
+      }
+    }
   },
   "keywords": [
     "color-theme",
@@ -37,5 +61,38 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Railly/one-hunter-vscode.git"
-  }
+  },
+  "scripts": {
+    "publish": "vsce publish",
+    "generate": "tsc ./scripts/generate-theme.ts && node ./dist/generate-theme.js",
+    "build:ts": "tsc -p src",
+    "build:theme": "ts-node --project scripts/tsconfig.json scripts/generate-theme.ts",
+    "build": "npm run build:ts && npm run build:theme"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "ts-node": "^10.9.1",
+    "tslib": "^2.4.1",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@types/vscode": "^1.74.0"
+  },
+  "badges": [
+    {
+      "url": "https://vsmarketplacebadges.dev/version/RaillyHugo-one-hunter.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter",
+      "description": "Extension Version"
+    },
+    {
+      "url": "https://vsmarketplacebadges.dev/installs/RaillyHugo-one-hunter.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter",
+      "description": "Installs"
+    },
+    {
+      "url": "https://vsmarketplacebadges.dev/rating/RaillyHugo-one-hunter.svg",
+      "href": "https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter",
+      "description": "Rating"
+    }
+  ]
 }
