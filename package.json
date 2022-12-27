@@ -3,7 +3,7 @@
   "displayName": "One Hunter Theme",
   "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
   "publisher": "RaillyHugo",
-  "version": "0.0.7",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -63,11 +63,12 @@
     "url": "https://github.com/Railly/one-hunter-vscode.git"
   },
   "scripts": {
-    "publish": "vsce publish",
     "generate": "tsc ./scripts/generate-theme.ts && node ./dist/generate-theme.js",
     "build:ts": "tsc -p src",
     "build:theme": "ts-node --project scripts/tsconfig.json scripts/generate-theme.ts",
-    "build": "npm run build:ts && npm run build:theme"
+    "build": "npm run build:ts && npm run build:theme",
+    "publish": "vsce publish",
+    "package": "vsce package"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
