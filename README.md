@@ -50,11 +50,9 @@ A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 - [ ] Add screenshots for all supported languages
 - [ ] Add support for more languages (C#, C++, Ruby, etc.)
 - [ ] Add more variants
-  - [ ] Dark
-  - [ ] Light
-  - [ ] High Contrast
-  - [ ] Material
+  - [x] Material
   - [ ] Vercel
+  - [ ] Light
 
 ## Supported Languages
 
