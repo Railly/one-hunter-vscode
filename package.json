@@ -3,7 +3,7 @@
   "displayName": "One Hunter Theme",
   "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
   "publisher": "RaillyHugo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -21,6 +21,11 @@
         "label": "One Hunter Theme Material",
         "uiTheme": "vs-dark",
         "path": "./themes/OneHunter-Material-color-theme.json"
+      },
+      {
+        "label": "One Hunter Theme Vercel",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneHunter-Vercel-color-theme.json"
       }
     ]
   },
@@ -33,11 +38,13 @@
         "markdownDescription": "%description.one-hunter.editorTheme%",
         "enum": [
           "classic",
-          "material"
+          "material",
+          "vercel"
         ],
         "enumDescriptions": [
           "Classic theme",
-          "Material theme"
+          "Material theme",
+          "Vercel theme"
         ],
         "description": "Select the theme variant"
       }
