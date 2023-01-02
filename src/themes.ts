@@ -115,7 +115,7 @@ export default {
       gullGray: "#B0BEC5",
       regentStBlue: "#4FC3F7",
       woodBark: "#3E2723",
-      outerSpace: "#212121",
+      outerSpace: "#3B4145",
       info: "#4FC3F7",
       warn: "#FFA726",
       error: "#EF5350",
