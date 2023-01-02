@@ -1,4 +1,5 @@
 enum OneHunterColors {
+  white = "white",
   black0 = "black0",
   black1 = "black1",
   frenchRose = "frenchRose",
@@ -42,6 +43,7 @@ enum OneHunterColors {
 export default {
   textColors: {
     classic: {
+      white: "#E0E0E0",
       black0: "#101315",
       black1: "#14181b",
       frenchRose: "#F4457D",
@@ -82,6 +84,7 @@ export default {
       "support.class.component.tsx": "#53A1FA",
     },
     material: {
+      white: "#E3E1E1",
       black0: "#15181b",
       black1: "#191d21",
       frenchRose: "#F06292",
@@ -122,6 +125,7 @@ export default {
       "support.class.component.tsx": "#64B5F6",
     },
     vercel: {
+      white: "#DCE3EA",
       black0: "#000000",
       black1: "#010101",
       frenchRose: "#DD4F7D",
@@ -160,6 +164,47 @@ export default {
       "meta.object-literal.key.tsx": "#DD4F7D",
       "entity.name.tag.tsx": "#43AAF9",
       "support.class.component.tsx": "#DD4F7D",
+    },
+    light: {
+      white: "#f4f4f4",
+      black0: "#F4F4F4",
+      black1: "#f8f8f8",
+      frenchRose: "#DF5984",
+      frenchRoseActive: "#DF5984",
+      cornflowerBlue: "#689FDE",
+      cornflowerBlueActive: "#A7D1F5",
+      dodgeBlue: "#689FDE",
+      dodgeBlueActive: "#A7D1F5",
+      heliotrope: "#B267E6",
+      heliotropeActive: "#D7C9F0",
+      saffronMango: "#FF7E00",
+      turquoise: "#00B172",
+      turquoiseActive: "#5BD1B9",
+      shark: "#ffffff",
+      sharkHover: "#ffffff",
+      sharkFocus: "#f2f2f2",
+      sharkActive: "#ADADAD",
+      alto: "#213144",
+      mercury: "#E6E6E6",
+      gray: "#A8A8A8",
+      gallery: "#5D5D5D",
+      cinnabar: "#E34234",
+      slateGray: "#d1d1d1",
+      pear: "#A6E22E",
+      alizarinCrimson: "#E61F44",
+      pistachio: "#8FBE00",
+      chenin: "#E6DB74",
+      gullGray: "#d1d1d1",
+      regentStBlue: "#689FDE",
+      woodBark: "#664E4D",
+      outerSpace: "#F4F4F4",
+      info: "#6796E6",
+      warn: "#CD9731",
+      error: "#F44747",
+      debug: "#B267E6",
+      "meta.object-literal.key.tsx": "#DF5984",
+      "entity.name.tag.tsx": "#689FDE",
+      "support.class.component.tsx": "#DF5984",
     },
   },
   editorThemes: {
@@ -211,7 +256,7 @@ export default {
 
       /* Files list */
       "badge.background": OneHunterColors.frenchRose,
-      "badge.foreground": OneHunterColors.alto,
+      "badge.foreground": OneHunterColors.white,
       "list.activeSelectionBackground": `${OneHunterColors.frenchRose}55`,
       "list.activeSelectionForeground": OneHunterColors.alto,
       "list.focusBackground": OneHunterColors.sharkFocus,
@@ -225,14 +270,14 @@ export default {
       "activityBar.background": OneHunterColors.black0,
       "activityBar.foreground": OneHunterColors.alto,
       "activityBarBadge.background": OneHunterColors.frenchRose,
-      "activityBarBadge.foreground": OneHunterColors.alto,
+      "activityBarBadge.foreground": OneHunterColors.white,
 
       /* Tabs */
       "editorGroupHeader.tabsBackground": OneHunterColors.sharkHover,
       // "tab.inactiveBackground": "#22272d", // TO-CHECK
       "tab.inactiveBackground": `${OneHunterColors.sharkFocus}44`,
       // "tab.inactiveForeground": "#728394", // TO-CHECK
-      "tab.inactiveForeground": OneHunterColors.gullGray,
+      "tab.inactiveForeground": `${OneHunterColors.alto}88`,
 
       /* Terminal */
       // "terminal.ansiBlack": "#242a2f", // TO-CHECK
@@ -549,6 +594,13 @@ export default {
         },
       },
       {
+        scope: "invalid.illegal",
+        settings: {
+          foreground: OneHunterColors.alto,
+          fontStyle: "strikethrough",
+        },
+      },
+      {
         scope: ["meta.diff", "meta.diff.header"],
         settings: {
           foreground: OneHunterColors.slateGray,
@@ -802,12 +854,14 @@ export default {
         scope: "entity.name.section.markdown",
         settings: {
           foreground: OneHunterColors.cornflowerBlue,
+          fontStyle: "bold",
         },
       },
       {
         scope: "punctuation.definition.heading.markdown",
         settings: {
           foreground: OneHunterColors.frenchRose,
+          fontStyle: "bold",
         },
       },
       {

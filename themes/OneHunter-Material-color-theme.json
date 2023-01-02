@@ -53,7 +53,7 @@
     "activityBarBadge.foreground": "#E3E1E1",
     "editorGroupHeader.tabsBackground": "#21252a",
     "tab.inactiveBackground": "#3a414744",
-    "tab.inactiveForeground": "#B0BEC5",
+    "tab.inactiveForeground": "#E3E1E188",
     "terminal.ansiBlack": "#212121",
     "terminal.ansiBlue": "#64B5F6",
     "terminal.ansiBrightBlack": "#454d54",
@@ -367,6 +367,13 @@
       }
     },
     {
+      "scope": "invalid.illegal",
+      "settings": {
+        "foreground": "#E3E1E1",
+        "fontStyle": "strikethrough"
+      }
+    },
+    {
       "scope": [
         "meta.diff",
         "meta.diff.header"
@@ -626,13 +633,15 @@
     {
       "scope": "entity.name.section.markdown",
       "settings": {
-        "foreground": "#64B5F6"
+        "foreground": "#64B5F6",
+        "fontStyle": "bold"
       }
     },
     {
       "scope": "punctuation.definition.heading.markdown",
       "settings": {
-        "foreground": "#F06292"
+        "foreground": "#F06292",
+        "fontStyle": "bold"
       }
     },
     {
