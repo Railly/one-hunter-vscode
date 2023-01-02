@@ -57,13 +57,13 @@
     "terminal.ansiBlack": "#F4F4F4",
     "terminal.ansiBlue": "#2372E1",
     "terminal.ansiBrightBlack": "#ADADAD",
-    "terminal.ansiBrightBlue": "#A7D1F5",
+    "terminal.ansiBrightBlue": "#2372E1",
     "terminal.ansiBrightCyan": "#D7C9F0",
     "terminal.ansiBrightGreen": "#5BD1B9",
     "terminal.ansiBrightMagenta": "#E1239A",
     "terminal.ansiBrightRed": "#E61F44",
     "terminal.ansiBrightWhite": "#213144",
-    "terminal.ansiBrightYellow": "#A7D1F5",
+    "terminal.ansiBrightYellow": "#2372E1",
     "terminal.ansiCyan": "#B267E6",
     "terminal.ansiGreen": "#00B172",
     "terminal.ansiMagenta": "#E1239A",
@@ -466,7 +466,7 @@
     {
       "scope": "meta.object-literal.key",
       "settings": {
-        "foreground": "#DF5984",
+        "foreground": "#E1239A",
         "fontStyle": "normal"
       }
     },
@@ -546,7 +546,7 @@
         "entity.name.tag.xml"
       ],
       "settings": {
-        "foreground": "#689FDE",
+        "foreground": "#2372E1",
         "fontStyle": ""
       }
     },
@@ -556,7 +556,7 @@
         "support.class.component.jsx"
       ],
       "settings": {
-        "foreground": "#DF5984",
+        "foreground": "#E1239A",
         "fontStyle": ""
       }
     },
