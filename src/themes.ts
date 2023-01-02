@@ -178,7 +178,7 @@ export default {
       heliotrope: "#B267E6",
       heliotropeActive: "#D7C9F0",
       saffronMango: "#FF7E00",
-      turquoise: "#00B172",
+      turquoise: "#0BA463",
       turquoiseActive: "#5BD1B9",
       shark: "#ffffff",
       sharkHover: "#ffffff",

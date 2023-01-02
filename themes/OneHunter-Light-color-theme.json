@@ -12,7 +12,7 @@
     "editorBracketMatch.background": "#E1239A44",
     "editorBracketMatch.border": "#2372E1",
     "editorCursor.foreground": "#213144",
-    "editorGutter.addedBackground": "#00B172",
+    "editorGutter.addedBackground": "#0BA463",
     "editorGutter.background": "#ffffff",
     "editorGutter.deletedBackground": "#E61F44",
     "editorGutter.modifiedBackground": "#FF7E00",
@@ -21,7 +21,7 @@
     "editorInlayHint.foreground": "#213144",
     "editorLineNumber.foreground": "#ADADAD",
     "editorLink.activeForeground": "#E1239A",
-    "editorOverviewRuler.addedForeground": "#00B172",
+    "editorOverviewRuler.addedForeground": "#0BA463",
     "editorOverviewRuler.deletedForeground": "#E61F44",
     "editorOverviewRuler.errorForeground": "#E61F44",
     "editorOverviewRuler.findMatchForeground": "#2372E155",
@@ -65,7 +65,7 @@
     "terminal.ansiBrightWhite": "#213144",
     "terminal.ansiBrightYellow": "#2372E1",
     "terminal.ansiCyan": "#B267E6",
-    "terminal.ansiGreen": "#00B172",
+    "terminal.ansiGreen": "#0BA463",
     "terminal.ansiMagenta": "#E1239A",
     "terminal.ansiRed": "#E61F44",
     "terminal.ansiWhite": "#213144",
@@ -76,7 +76,7 @@
     "gitDecoration.deletedResourceForeground": "#E61F44",
     "gitDecoration.ignoredResourceForeground": "#ADADAD",
     "gitDecoration.modifiedResourceForeground": "#FF7E00",
-    "gitDecoration.untrackedResourceForeground": "#00B172",
+    "gitDecoration.untrackedResourceForeground": "#0BA463",
     "statusBar.background": "#F4F4F4",
     "statusBar.foreground": "#213144",
     "statusBar.noFolderBackground": "#F4F4F4",
@@ -160,7 +160,7 @@
         "punctuation.definition.string.template"
       ],
       "settings": {
-        "foreground": "#00B172"
+        "foreground": "#0BA463"
       }
     },
     {
@@ -231,7 +231,7 @@
     {
       "scope": "string.quoted punctuation.definition.string",
       "settings": {
-        "foreground": "#00B172",
+        "foreground": "#0BA463",
         "fontStyle": ""
       }
     },
@@ -241,7 +241,7 @@
         "string.regexp punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#00B172",
+        "foreground": "#0BA463",
         "fontStyle": ""
       }
     },
@@ -304,7 +304,7 @@
         "source.css"
       ],
       "settings": {
-        "foreground": "#00B172",
+        "foreground": "#0BA463",
         "fontStyle": ""
       }
     },
@@ -348,7 +348,7 @@
         "support.class"
       ],
       "settings": {
-        "foreground": "#00B172",
+        "foreground": "#0BA463",
         "fontStyle": ""
       }
     },
@@ -596,7 +596,7 @@
     {
       "scope": "meta.structure.dictionary.value.json string.quoted.double.json",
       "settings": {
-        "foreground": "#00B172"
+        "foreground": "#0BA463"
       }
     },
     {
@@ -605,7 +605,7 @@
         "punctuation.definition.string"
       ],
       "settings": {
-        "foreground": "#00B172"
+        "foreground": "#0BA463"
       }
     },
     {
@@ -749,7 +749,7 @@
         "meta.use.php"
       ],
       "settings": {
-        "foreground": "#00B172"
+        "foreground": "#0BA463"
       }
     },
     {
@@ -776,7 +776,7 @@
       "name": "Prisma: Relation",
       "scope": "variable.language.relations.prisma",
       "settings": {
-        "foreground": "#00B172"
+        "foreground": "#0BA463"
       }
     }
   ]
