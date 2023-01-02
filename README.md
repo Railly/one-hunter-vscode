@@ -6,7 +6,7 @@
 
 <p align="center">
 A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
-  <br><br>
+  <br>
 </p>
 
 <p align="center">
@@ -14,7 +14,7 @@ A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
     <a href="https://github.com/catppuccin/vscode/issues"><img src="https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/RaillyHugo.one-hunter?colorA=363a4f&colorB=5BDfff&style=for-the-badge"></a>
 </p>
 
-![image-1](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-theme.png)
+![image-1](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-preview.png)
 
 ## Installation
 
