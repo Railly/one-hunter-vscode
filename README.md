@@ -1,16 +1,17 @@
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png" width="100" alt="Logo"/><br/>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+	One Hunter Theme for <a href="https://marketplace.visualstudio.com/items?itemName=RaillyHugo.one-hunter">VSCode</a>
+</h3>
+
 <p align="center">
-  <a href="#">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png"/>
-      <img src="https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/logo.png" height="128"/>
-    </picture>
-    <h1 align="center">One Hunter Theme</h1>
-  </a>
+A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
+  <br><br>
 </p>
 
 <p align="center">
-A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
-  <br><br>
+    <a href="https://github.com/catppuccin/vscode/stargazers"><img src="https://img.shields.io/github/stars/Railly/one-hunter-vscode?colorA=363a4f&colorB=f9c35a&style=for-the-badge"></a>
+    <a href="https://github.com/catppuccin/vscode/issues"><img src="https://img.shields.io/visual-studio-marketplace/azure-devops/installs/total/RaillyHugo.one-hunter?colorA=363a4f&colorB=5BDfff&style=for-the-badge"></a>
 </p>
 
 ![image-1](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-theme.png)
