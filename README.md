@@ -37,14 +37,18 @@ A VSCode theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 
 ![image-4](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel.png)
 
+### Light
+
+![image-5](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/light.png)
+
 ## Roadmap
 
 - [ ] Add screenshots for all supported languages
 - [ ] Add support for more languages (C#, C++, Ruby, etc.)
-- [ ] Add more variants
+- [x] Add more variants
   - [x] Material
   - [x] Vercel
-  - [ ] Light
+  - [x] Light
 
 ## Supported Languages
 
