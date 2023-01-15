@@ -597,7 +597,6 @@ export default {
         scope: "invalid.illegal",
         settings: {
           foreground: OneHunterColors.alto,
-          fontStyle: "strikethrough",
         },
       },
       {

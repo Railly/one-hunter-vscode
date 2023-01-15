@@ -369,8 +369,7 @@
     {
       "scope": "invalid.illegal",
       "settings": {
-        "foreground": "#E3E1E1",
-        "fontStyle": "strikethrough"
+        "foreground": "#E3E1E1"
       }
     },
     {
