@@ -78,6 +78,15 @@ Also, if you like this theme, please consider giving it a ⭐️
 
 - [Railly Hugo](https://twitter.com/RaillyHugo)
 
+## Support my work
+
+<a href="https://www.buymeacoffee.com/raillyhugo" target="_blank">
+	<img style="margin-right: 20px;" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="45px">
+</a>
+<a href="https://www.paypal.com/donate/?hosted_button_id=J3PJ5N6LVZCPY">
+  <img src="https://raw.githubusercontent.com/Railly/Railly/main/buttons/donate-with-paypal.png" alt="Donate with PayPal" height="45px" />
+</a>
+
 ## License
 
 [MIT](https://github.com/Railly/one-hunter-vscode/blob/main/LICENSE)
