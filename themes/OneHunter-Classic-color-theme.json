@@ -285,7 +285,9 @@
         "keyword.operator.bitwise",
         "keyword.operator.relational",
         "keyword.operator.increment",
-        "keyword.operator.decrement"
+        "keyword.operator.decrement",
+        "keyword.operator.logical",
+        "keyword.operator.comparison",
       ],
       "settings": {
         "foreground": "#53A1FA"

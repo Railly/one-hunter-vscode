@@ -525,6 +525,8 @@ export default {
           "keyword.operator.relational",
           "keyword.operator.increment",
           "keyword.operator.decrement",
+          "keyword.operator.logical",
+          "keyword.operator.comparison",
         ],
         settings: {
           foreground: OneHunterColors.cornflowerBlue,
