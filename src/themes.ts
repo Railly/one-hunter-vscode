@@ -527,6 +527,7 @@ export default {
           "keyword.operator.decrement",
           "keyword.operator.logical",
           "keyword.operator.comparison",
+          "keyword.operator.ternary",
         ],
         settings: {
           foreground: OneHunterColors.cornflowerBlue,
@@ -727,7 +728,11 @@ export default {
         },
       },
       {
-        scope: ["variable.other.constant.property", "keyword.operator.ternary"],
+        scope: [
+          "variable.other.constant.property",
+          "keyword.operator.ternary",
+          "keyword.operator.expression.typeof",
+        ],
         settings: {
           foreground: OneHunterColors.heliotrope,
         },

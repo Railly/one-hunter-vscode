@@ -288,6 +288,7 @@
         "keyword.operator.decrement",
         "keyword.operator.logical",
         "keyword.operator.comparison",
+        "keyword.operator.ternary"
       ],
       "settings": {
         "foreground": "#64B5F6"
@@ -503,7 +504,8 @@
     {
       "scope": [
         "variable.other.constant.property",
-        "keyword.operator.ternary"
+        "keyword.operator.ternary",
+        "keyword.operator.expression.typeof"
       ],
       "settings": {
         "foreground": "#BA68C8"
