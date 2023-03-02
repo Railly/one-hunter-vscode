@@ -1002,6 +1002,13 @@ export default {
           foreground: OneHunterColors.turquoise,
         },
       },
+      /* yml */
+      {
+        scope: "entity.name.tag.yaml",
+        settings: {
+          foreground: OneHunterColors.frenchRose,
+        },
+      },
     ],
   },
 };
