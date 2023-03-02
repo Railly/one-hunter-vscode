@@ -14,3 +14,7 @@ export const load: PageLoad = async ({ parent }) => {
 
   return {}
 }
+
+// example of usage of typeof
+
+export type Session = typeof import('./$session').Session
