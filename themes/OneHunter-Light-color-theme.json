@@ -194,7 +194,8 @@
       "scope": [
         "keyword",
         "keyword.operator.new",
-        "storage.modifier.async"
+        "storage.modifier.async",
+        "keyword.operator.less",
       ],
       "settings": {
         "foreground": "#E1239A",
@@ -656,7 +657,9 @@
     {
       "scope": [
         "punctuation.definition.bold.markdown",
-        "punctuation.definition.italic.markdown"
+        "punctuation.definition.italic.markdown",
+        "punctuation.definition.entity",
+        
       ],
       "settings": {
         "foreground": "#E1239A"
