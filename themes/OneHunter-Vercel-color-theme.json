@@ -288,7 +288,8 @@
         "keyword.operator.decrement",
         "keyword.operator.logical",
         "keyword.operator.comparison",
-        "keyword.operator.ternary"
+        "keyword.operator.ternary",
+        "keyword.operator.expression",
       ],
       "settings": {
         "foreground": "#43AAF9"
