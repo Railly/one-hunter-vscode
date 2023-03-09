@@ -533,6 +533,7 @@ export default {
           "keyword.operator.logical",
           "keyword.operator.comparison",
           "keyword.operator.ternary",
+          "keyword.operator.expression",
         ],
         settings: {
           foreground: OneHunterColors.cornflowerBlue,
