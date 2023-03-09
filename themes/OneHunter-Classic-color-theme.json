@@ -195,7 +195,7 @@
         "keyword",
         "keyword.operator.new",
         "storage.modifier.async",
-        "keyword.operator.less",
+        "keyword.operator.less"
       ],
       "settings": {
         "foreground": "#F4457D",
@@ -290,7 +290,7 @@
         "keyword.operator.logical",
         "keyword.operator.comparison",
         "keyword.operator.ternary",
-        "keyword.operator.expression",
+        "keyword.operator.expression"
       ],
       "settings": {
         "foreground": "#53A1FA"
@@ -659,7 +659,7 @@
       "scope": [
         "punctuation.definition.bold.markdown",
         "punctuation.definition.italic.markdown",
-        "punctuation.definition.entity",
+        "punctuation.definition.entity"
       ],
       "settings": {
         "foreground": "#F4457D"

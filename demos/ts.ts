@@ -5,6 +5,15 @@ import type { PageLoad } from './$types'
 interface Session {
   user: string
 }
+for (const key in object) {
+  if (object.hasOwnProperty(key)) {
+    const element = object[key]
+  }
+}
+
+for (const iterator of object) {
+  console.log(iterator)
+}
 
 export const load: PageLoad = async ({ parent }) => {
   const { session } = await parent()
