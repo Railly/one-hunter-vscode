@@ -437,7 +437,12 @@ export default {
         },
       },
       {
-        scope: ["keyword", "keyword.operator.new", "storage.modifier.async"],
+        scope: [
+          "keyword",
+          "keyword.operator.new",
+          "storage.modifier.async",
+          "keyword.operator.less",
+        ],
         settings: {
           foreground: OneHunterColors.frenchRose,
           fontStyle: "bold",
@@ -880,6 +885,7 @@ export default {
         scope: [
           "punctuation.definition.bold.markdown",
           "punctuation.definition.italic.markdown",
+          "punctuation.definition.entity",
         ],
         settings: {
           foreground: OneHunterColors.frenchRose,
