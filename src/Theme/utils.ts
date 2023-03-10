@@ -16,6 +16,9 @@ export function configFactory(configuration: ThemeConfiguration) {
     if (token.settings.foreground) {
       token.settings.foreground = colorObj[token.settings.foreground];
     }
+    if (token.settings) {
+      token.settings.fontStyle = colorObj[token.settings.fontStyle];
+    }
     return token;
   });
 

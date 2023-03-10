@@ -38,6 +38,7 @@ enum OneHunterColors {
   "meta.object-literal.key.tsx" = "meta.object-literal.key.tsx",
   "entity.name.tag.tsx" = "entity.name.tag.tsx",
   "support.class.component.tsx" = "support.class.component.tsx",
+  "keyword-weight" = "keyword-weight",
 }
 
 export default {
@@ -82,6 +83,7 @@ export default {
       "meta.object-literal.key.tsx": "#F4457D",
       "entity.name.tag.tsx": "#F4457D",
       "support.class.component.tsx": "#53A1FA",
+      "keyword-weight": "bold",
     },
     material: {
       white: "#E3E1E1",
@@ -123,6 +125,7 @@ export default {
       "meta.object-literal.key.tsx": "#F06292",
       "entity.name.tag.tsx": "#F06292",
       "support.class.component.tsx": "#64B5F6",
+      "keyword-weight": "bold",
     },
     vercel: {
       white: "#DCE3EA",
@@ -164,17 +167,18 @@ export default {
       "meta.object-literal.key.tsx": "#DD4F7D",
       "entity.name.tag.tsx": "#43AAF9",
       "support.class.component.tsx": "#DD4F7D",
+      "keyword-weight": "bold",
     },
     light: {
       white: "#f4f4f4",
-      black0: "#F4F4F4",
+      black0: "#eaeaea",
       black1: "#f8f8f8",
       frenchRose: "#E1239A",
       frenchRoseActive: "#E1239A",
-      cornflowerBlue: "#2372E1",
-      cornflowerBlueActive: "#2372E1",
-      dodgeBlue: "#2372E1",
-      dodgeBlueActive: "#2372E1",
+      cornflowerBlue: "#0488DB",
+      cornflowerBlueActive: "#0488DB",
+      dodgeBlue: "#0488DB",
+      dodgeBlueActive: "#0488DB",
       heliotrope: "#B267E6",
       heliotropeActive: "#D7C9F0",
       saffronMango: "#FF7E00",
@@ -182,9 +186,9 @@ export default {
       turquoiseActive: "#5BD1B9",
       shark: "#ffffff",
       sharkHover: "#ffffff",
-      sharkFocus: "#f2f2f2",
+      sharkFocus: "#B3B3B3",
       sharkActive: "#ADADAD",
-      alto: "#213144",
+      alto: "#313131",
       mercury: "#E6E6E6",
       gray: "#A8A8A8",
       gallery: "#5D5D5D",
@@ -205,6 +209,7 @@ export default {
       "meta.object-literal.key.tsx": "#E1239A",
       "entity.name.tag.tsx": "#2372E1",
       "support.class.component.tsx": "#E1239A",
+      "keyword-weight": "normal",
     },
   },
   editorThemes: {
@@ -278,6 +283,10 @@ export default {
       "tab.inactiveBackground": `${OneHunterColors.sharkFocus}44`,
       // "tab.inactiveForeground": "#728394", // TO-CHECK
       "tab.inactiveForeground": `${OneHunterColors.alto}88`,
+      "tab.activeModifiedBorder": OneHunterColors.saffronMango,
+      "tab.inactiveModifiedBorder": OneHunterColors.cornflowerBlue,
+      "tab.unfocusedActiveModifiedBorder": `${OneHunterColors.saffronMango}88`,
+      "tab.unfocusedInactiveModifiedBorder": `${OneHunterColors.cornflowerBlue}88`,
 
       /* Terminal */
       // "terminal.ansiBlack": "#242a2f", // TO-CHECK
@@ -445,7 +454,7 @@ export default {
         ],
         settings: {
           foreground: OneHunterColors.frenchRose,
-          fontStyle: "bold",
+          fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
@@ -500,7 +509,7 @@ export default {
         scope: "storage.type",
         settings: {
           foreground: OneHunterColors.frenchRose,
-          fontStyle: "bold",
+          fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
@@ -519,7 +528,7 @@ export default {
         ],
         settings: {
           foreground: OneHunterColors.dodgeBlue,
-          fontStyle: "bold",
+          fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
