@@ -44,6 +44,14 @@ export default class Person {
   getAge() {
     return this.age;
   }
+
+  getAgeInTenYears() {
+    return this.age + 10;
+  }
+
+  eat() {
+    return 'Eating...';
+  }
 }
 
 const person = new Person('John', 18);
@@ -56,8 +64,12 @@ const myObj = {
   },
   getAge() {
     return this.age;
+  },
+  getAgeInTenYears() {
+    return this.age + 10;
   }
 }
+
 
 const myProxy = new Proxy(myObj, {
   get(target, prop) {

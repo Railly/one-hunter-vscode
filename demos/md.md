@@ -31,6 +31,13 @@ function snippetExample() {
 }
 ```
 
+```cpp
+int main() {
+  printf("hello world", 42);
+  return 0
+}
+```
+
 ---
 
 Look, there's a delimited above.
