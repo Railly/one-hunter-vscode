@@ -68,11 +68,7 @@ A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 
 ## Contributing
 
-If you want to contribute to this project, you can do so by forking the repository and submitting a pull request.
-
-Feel free to open an issue if you find a bug or have a suggestion, but if you want to add support for a new language, please make sure to add a screenshot of the theme in action.
-
-Also, if you like this theme, please consider giving it a ⭐️
+- [CONTRIBUTING.md](https://github.com/Railly/one-hunter-vscode/blob/main/CONTRIBUTING.md)
 
 ## Author
 
@@ -89,4 +85,4 @@ Also, if you like this theme, please consider giving it a ⭐️
 
 ## License
 
-[MIT](https://github.com/Railly/one-hunter-vscode/blob/main/LICENSE)
+- [MIT](https://github.com/Railly/one-hunter-vscode/blob/main/LICENSE)
