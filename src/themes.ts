@@ -525,6 +525,8 @@ export default {
           "meta.require",
           "support.function.any-method",
           "variable.function",
+          "support.function.builtin.python",
+          "meta.function-call.generic.python",
         ],
         settings: {
           foreground: OneHunterColors.dodgeBlue,
@@ -753,7 +755,7 @@ export default {
         },
       },
       {
-        scope: "entity.name.type",
+        scope: ["entity.name.type", "support.type.python"],
         settings: {
           foreground: OneHunterColors.saffronMango,
         },
