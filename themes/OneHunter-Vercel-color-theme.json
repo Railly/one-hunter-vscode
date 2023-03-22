@@ -267,7 +267,9 @@
         "entity.name.function",
         "meta.require",
         "support.function.any-method",
-        "variable.function"
+        "variable.function",
+        "support.function.builtin.python",
+        "meta.function-call.generic.python"
       ],
       "settings": {
         "foreground": "#43AAF9",
@@ -497,7 +499,10 @@
       }
     },
     {
-      "scope": "entity.name.type",
+      "scope": [
+        "entity.name.type",
+        "support.type.python"
+      ],
       "settings": {
         "foreground": "#FAC760"
       }
@@ -534,7 +539,7 @@
         "entity.name.tag.xml",
         "entity.name.tag.script.html.vue",
         "entity.name.tag.template.html.vue",
-        "entity.name.tag.style.html.vue",
+        "entity.name.tag.style.html.vue"
       ],
       "settings": {
         "foreground": "#43AAF9"
