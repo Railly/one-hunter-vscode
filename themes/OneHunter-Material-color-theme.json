@@ -772,6 +772,19 @@
       "settings": {
         "foreground": "#F06292"
       }
+    },
+    {
+      "scope": "storage.type.java",
+      "settings": {
+        "foreground": "#F7BC62",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "meta.tag.xml",
+      "settings": {
+        "foreground": "#4FC3F7"
+      }
     }
   ]
 }

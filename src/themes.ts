@@ -1030,6 +1030,21 @@ export default {
           foreground: OneHunterColors.frenchRose,
         },
       },
+      /* java */
+      {
+        scope: "storage.type.java",
+        settings: {
+          foreground: OneHunterColors.saffronMango,
+          fontStyle: OneHunterColors["keyword-weight"],
+        },
+      },
+      /* xml */
+      {
+        scope: "meta.tag.xml",
+        settings: {
+          foreground: OneHunterColors.dodgeBlue,
+        },
+      },
     ],
   },
 };
