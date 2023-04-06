@@ -781,6 +781,34 @@
       }
     },
     {
+      "scope": [
+        "keyword.other.package.java",
+        "keyword.other.import.java"
+      ],
+      "settings": {
+        "foreground": "#DD4F7D",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "storage.modifier.package.java",
+      "settings": {
+        "foreground": "#FAC760"
+      }
+    },
+    {
+      "scope": "storage.modifier.import.java",
+      "settings": {
+        "foreground": "#DCE3EA"
+      }
+    },
+    {
+      "scope": "punctuation.separator.java",
+      "settings": {
+        "foreground": "#EFEFEF"
+      }
+    },
+    {
       "scope": "meta.tag.xml",
       "settings": {
         "foreground": "#43AAF9"
