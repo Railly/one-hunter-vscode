@@ -1038,6 +1038,31 @@ export default {
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
+      {
+        scope: ["keyword.other.package.java", "keyword.other.import.java"],
+        settings: {
+          foreground: OneHunterColors.frenchRose,
+          fontStyle: OneHunterColors["keyword-weight"],
+        },
+      },
+      {
+        scope: "storage.modifier.package.java",
+        settings: {
+          foreground: OneHunterColors.saffronMango,
+        },
+      },
+      {
+        scope: "storage.modifier.import.java",
+        settings: {
+          foreground: OneHunterColors.alto,
+        },
+      },
+      {
+        scope: "punctuation.separator.java",
+        settings: {
+          foreground: OneHunterColors.gallery,
+        },
+      },
       /* xml */
       {
         scope: "meta.tag.xml",
