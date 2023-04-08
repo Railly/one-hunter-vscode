@@ -794,6 +794,11 @@ export default {
           "entity.name.tag.script.html.vue",
           "entity.name.tag.template.html.vue",
           "entity.name.tag.style.html.vue",
+          "entity.name.tag.style.html.vue",
+          "entity.name.tag.script.html",
+          "entity.name.tag.template.html",
+          "entity.name.tag.style.html",
+          "entity.name.tag.block.any.html",
         ],
         settings: {
           foreground: OneHunterColors["entity.name.tag.tsx"],
