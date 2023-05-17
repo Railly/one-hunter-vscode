@@ -619,30 +619,45 @@
     {
       "scope": [
         "punctuation.definition.list.begin.markdown",
+        "punctuation.definition.list.begin.mdx",
         "punctuation.definition.list.end.markdown",
+        "punctuation.definition.list.end.mdx",
         "punctuation.definition.quote.begin.markdown",
+        "punctuation.definition.quote.begin.mdx",
         "punctuation.definition.quote.end.markdown",
+        "punctuation.definition.quote.end.mdx",
         "meta.separator.markdown",
-        "markup.inline.raw.string.markdown"
+        "meta.separator.mdx",
+        "markup.inline.raw.string.markdown",
+        "markup.raw.code.text.mdx"
       ],
       "settings": {
         "foreground": "#FAC760"
       }
     },
     {
-      "scope": "entity.name.section.markdown",
+      "scope": [
+        "entity.name.section.markdown",
+        "entity.name.section.mdx"
+      ],
       "settings": {
         "foreground": "#43AAF9"
       }
     },
     {
-      "scope": "punctuation.definition.heading.markdown",
+      "scope": [
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.heading.mdx"
+      ],
       "settings": {
         "foreground": "#DD4F7D"
       }
     },
     {
-      "scope": "markup.raw.inline.markdown",
+      "scope": [
+        "markup.raw.inline.markdown",
+        "markup.raw.inline.mdx"
+      ],
       "settings": {
         "foreground": "#9FBDE0"
       }
@@ -650,7 +665,9 @@
     {
       "scope": [
         "punctuation.definition.bold.markdown",
+        "punctuation.definition.bold.mdx",
         "punctuation.definition.italic.markdown",
+        "punctuation.definition.italic.mdx",
         "punctuation.definition.entity"
       ],
       "settings": {
@@ -660,14 +677,19 @@
     {
       "scope": [
         "punctuation.definition.string.begin.markdown",
-        "punctuation.definition.string.end.markdown"
+        "punctuation.definition.string.begin.mdx",
+        "punctuation.definition.string.end.markdown",
+        "punctuation.definition.string.end.mdx"
       ],
       "settings": {
         "foreground": "#DD4F7D"
       }
     },
     {
-      "scope": "punctuation.definition.metadata.markdown",
+      "scope": [
+        "punctuation.definition.metadata.markdown",
+        "punctuation.definition.metadata.mdx"
+      ],
       "settings": {
         "foreground": "#DD4F7D"
       }
@@ -676,7 +698,9 @@
       "scope": [
         "markup.underline.link.markdown",
         "markup.underline.link.image.markdown",
-        "meta.image.inline.markdown"
+        "string.other.link.destination.mdx",
+        "meta.image.inline.markdown",
+        "meta.image.inline.mdx"
       ],
       "settings": {
         "foreground": "#DD4F7D"
@@ -685,24 +709,35 @@
     {
       "scope": [
         "markup.bold.markdown",
-        "markup.italic.markdown"
+        "string.other.strong.asterisk.mdx",
+        "markup.italic.markdown",
+        "markup.italic.mdx"
       ],
       "settings": {
         "foreground": "#DD4F7D"
       }
     },
     {
-      "scope": "markup.italic.markdown",
+      "scope": [
+        "markup.italic.markdown",
+        "markup.italic.mdx"
+      ],
       "settings": {}
     },
     {
-      "scope": "markup.bold.markdown",
+      "scope": [
+        "markup.bold.markdown",
+        "markup.bold.mdx"
+      ],
       "settings": {}
     },
     {
-      "scope": "markup.raw.block.markdown",
+      "scope": [
+        "markup.raw.block.markdown",
+        "markup.raw.block.mdx"
+      ],
       "settings": {
-        "foreground": "#664E4D"
+        "foreground": "#9FBDE0"
       }
     },
     {

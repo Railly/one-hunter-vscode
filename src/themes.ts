@@ -867,36 +867,45 @@ export default {
           foreground: OneHunterColors.frenchRose,
         },
       },
-      /* Markdown */
+      /* Markdown and MDX */
       {
         scope: [
           "punctuation.definition.list.begin.markdown",
+          "punctuation.definition.list.begin.mdx",
           "punctuation.definition.list.end.markdown",
+          "punctuation.definition.list.end.mdx",
           "punctuation.definition.quote.begin.markdown",
+          "punctuation.definition.quote.begin.mdx",
           "punctuation.definition.quote.end.markdown",
+          "punctuation.definition.quote.end.mdx",
           "meta.separator.markdown",
+          "meta.separator.mdx",
           "markup.inline.raw.string.markdown",
+          "markup.raw.code.text.mdx",
         ],
         settings: {
           foreground: OneHunterColors.saffronMango,
         },
       },
       {
-        scope: "entity.name.section.markdown",
+        scope: ["entity.name.section.markdown", "entity.name.section.mdx"],
         settings: {
           foreground: OneHunterColors.cornflowerBlue,
           fontStyle: "bold",
         },
       },
       {
-        scope: "punctuation.definition.heading.markdown",
+        scope: [
+          "punctuation.definition.heading.markdown",
+          "punctuation.definition.heading.mdx",
+        ],
         settings: {
           foreground: OneHunterColors.frenchRose,
           fontStyle: "bold",
         },
       },
       {
-        scope: "markup.raw.inline.markdown",
+        scope: ["markup.raw.inline.markdown", "markup.raw.inline.mdx"],
         settings: {
           foreground: OneHunterColors.regentStBlue,
         },
@@ -904,7 +913,9 @@ export default {
       {
         scope: [
           "punctuation.definition.bold.markdown",
+          "punctuation.definition.bold.mdx",
           "punctuation.definition.italic.markdown",
+          "punctuation.definition.italic.mdx",
           "punctuation.definition.entity",
         ],
         settings: {
@@ -914,14 +925,19 @@ export default {
       {
         scope: [
           "punctuation.definition.string.begin.markdown",
+          "punctuation.definition.string.begin.mdx",
           "punctuation.definition.string.end.markdown",
+          "punctuation.definition.string.end.mdx",
         ],
         settings: {
           foreground: OneHunterColors.frenchRose,
         },
       },
       {
-        scope: "punctuation.definition.metadata.markdown",
+        scope: [
+          "punctuation.definition.metadata.markdown",
+          "punctuation.definition.metadata.mdx",
+        ],
         settings: {
           foreground: OneHunterColors.frenchRose,
         },
@@ -930,7 +946,9 @@ export default {
         scope: [
           "markup.underline.link.markdown",
           "markup.underline.link.image.markdown",
+          "string.other.link.destination.mdx",
           "meta.image.inline.markdown",
+          "meta.image.inline.mdx",
         ],
         settings: {
           foreground: OneHunterColors.frenchRose,
@@ -938,29 +956,35 @@ export default {
         },
       },
       {
-        scope: ["markup.bold.markdown", "markup.italic.markdown"],
+        scope: [
+          "markup.bold.markdown",
+          "string.other.strong.asterisk.mdx",
+          "markup.italic.markdown",
+          "markup.italic.mdx",
+        ],
         settings: {
           foreground: OneHunterColors.frenchRose,
         },
       },
       {
-        scope: "markup.italic.markdown",
+        scope: ["markup.italic.markdown", "markup.italic.mdx"],
         settings: {
           fontStyle: "italic",
         },
       },
       {
-        scope: "markup.bold.markdown",
+        scope: ["markup.bold.markdown", "markup.bold.mdx"],
         settings: {
           fontStyle: "bold",
         },
       },
       {
-        scope: "markup.raw.block.markdown",
+        scope: ["markup.raw.block.markdown", "markup.raw.block.mdx"],
         settings: {
-          foreground: OneHunterColors.woodBark,
+          foreground: OneHunterColors.regentStBlue,
         },
       },
+
       /* Rust */
       {
         scope: "keyword.other.rust",
