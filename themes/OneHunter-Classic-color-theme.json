@@ -853,6 +853,49 @@
       "settings": {
         "foreground": "#43AAF9"
       }
+    },
+    {
+      "scope": [
+        "keyword.other.declaration-specifier.swift",
+        "keyword.other.declaration-specifier.accessibility.swift"
+      ],
+      "settings": {
+        "foreground": "#F4457D",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "support.type.swift",
+        "meta.function-result.swift",
+        "variable.language.swift",
+        "keyword.operator.custom.infix.swift"
+      ],
+      "settings": {
+        "foreground": "#53A1FA"
+      }
+    },
+    {
+      "scope": "variable.parameter.function.swift",
+      "settings": {
+        "foreground": "#E0E0E0"
+      }
+    },
+    {
+      "scope": "entity.name.function.swift",
+      "settings": {
+        "foreground": "#53A1FA",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "variable.parameter.function.swift",
+        "meta.parameter-clause.swift"
+      ],
+      "settings": {
+        "foreground": "#E0E0E0"
+      }
     }
   ]
 }

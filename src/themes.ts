@@ -1099,6 +1099,50 @@ export default {
           foreground: OneHunterColors.dodgeBlue,
         },
       },
+      /* Swift */
+      {
+        scope: [
+          "keyword.other.declaration-specifier.swift",
+          "keyword.other.declaration-specifier.accessibility.swift"
+        ],
+        settings: {
+          foreground: OneHunterColors.frenchRose,
+          fontStyle: OneHunterColors["keyword-weight"]
+        }
+      },
+      {
+        scope: [
+          "support.type.swift",
+          "meta.function-result.swift",
+          "variable.language.swift",
+          "keyword.operator.custom.infix.swift"
+        ],
+        settings: {
+          foreground: OneHunterColors.cornflowerBlue
+        }
+      },
+      {
+        scope: "variable.parameter.function.swift",
+        settings: {
+          foreground: OneHunterColors.alto
+        }
+      },
+      {
+        scope: "entity.name.function.swift",
+        settings: {
+          foreground: OneHunterColors.cornflowerBlue,
+          fontStyle: OneHunterColors["keyword-weight"]
+        }
+      },
+      {
+        scope: [
+          "variable.parameter.function.swift",
+          "meta.parameter-clause.swift"
+        ],
+        settings: {
+          foreground: OneHunterColors.white
+        }
+      },
     ],
   },
 };
