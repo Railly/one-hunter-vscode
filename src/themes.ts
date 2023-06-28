@@ -95,7 +95,7 @@ export default {
       cornflowerBlueActive: "#90CAF9",
       dodgeBlue: "#4FC3F7",
       dodgeBlueActive: "#81D4FA",
-      heliotrope: "#BA68C8",
+      heliotrope: "#C972D8",
       heliotropeActive: "#E1BEE7",
       saffronMango: "#F7BC62",
       turquoise: "#66dfc4",
@@ -1143,6 +1143,50 @@ export default {
           foreground: OneHunterColors.white
         }
       },
+      /* Golang */
+      {
+        scope: [
+          "support.function.go"
+        ],
+        settings: {
+          foreground: OneHunterColors.dodgeBlue,
+          fontStyle: OneHunterColors["keyword-weight"],
+        }
+      },
+      {
+        scope: [
+          "keyword.operator.address.go",
+          "keyword.operator.pointer.go",
+        ],
+        settings: {
+          foreground: OneHunterColors.cornflowerBlue,
+        },
+      },
+      {
+        // To quickly differentiate concurrency keywords 
+        scope: [
+          "keyword.channel.go",
+        ],
+        settings: {
+          foreground: OneHunterColors.heliotrope,
+        },
+      },
+      {
+        scope: [
+          "storage.type.numeric.go",
+          "storage.type.string.go",
+          "storage.type.error.go",
+          "storage.type.boolean.go",
+          "storage.type.byte.go",
+          "storage.type.uintptr.go",
+          "storage.type.error.go",
+          "storage.type.rune.go",
+          "storage.type.complex.go",
+        ],
+        settings: {
+          foreground: OneHunterColors.saffronMango,
+        },
+      }
     ],
   },
 };

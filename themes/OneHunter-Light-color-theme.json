@@ -896,6 +896,48 @@
       "settings": {
         "foreground": "#f4f4f4"
       }
+    },
+    {
+      "scope": [
+        "support.function.go"
+      ],
+      "settings": {
+        "foreground": "#0488DB",
+        "fontStyle": "normal"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.address.go",
+        "keyword.operator.pointer.go"
+      ],
+      "settings": {
+        "foreground": "#0488DB"
+      }
+    },
+    {
+      "scope": [
+        "keyword.channel.go"
+      ],
+      "settings": {
+        "foreground": "#B267E6"
+      }
+    },
+    {
+      "scope": [
+        "storage.type.numeric.go",
+        "storage.type.string.go",
+        "storage.type.error.go",
+        "storage.type.boolean.go",
+        "storage.type.byte.go",
+        "storage.type.uintptr.go",
+        "storage.type.error.go",
+        "storage.type.rune.go",
+        "storage.type.complex.go"
+      ],
+      "settings": {
+        "foreground": "#FF7E00"
+      }
     }
   ]
 }
