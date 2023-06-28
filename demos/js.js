@@ -59,6 +59,7 @@ const person = new Person('John', 18);
 const myObj = {
   name: 'John',
   age: 18,
+  hello: null,
   getName() {
     return this.name;
   },

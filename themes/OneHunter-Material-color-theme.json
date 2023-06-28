@@ -25,7 +25,7 @@
     "editorOverviewRuler.deletedForeground": "#EF5350",
     "editorOverviewRuler.errorForeground": "#EF5350",
     "editorOverviewRuler.findMatchForeground": "#64B5F655",
-    "editorOverviewRuler.infoForeground": "#BA68C8",
+    "editorOverviewRuler.infoForeground": "#C972D8",
     "editorOverviewRuler.modifiedForeground": "#F7BC62",
     "editorOverviewRuler.warningForeground": "#F7BC62",
     "editorRuler.foreground": "#3B4145",
@@ -68,7 +68,7 @@
     "terminal.ansiBrightRed": "#EF5350",
     "terminal.ansiBrightWhite": "#E3E1E1",
     "terminal.ansiBrightYellow": "#90CAF9",
-    "terminal.ansiCyan": "#BA68C8",
+    "terminal.ansiCyan": "#C972D8",
     "terminal.ansiGreen": "#66dfc4",
     "terminal.ansiMagenta": "#F06292",
     "terminal.ansiRed": "#EF5350",
@@ -76,7 +76,7 @@
     "terminal.ansiYellow": "#64B5F6",
     "terminal.background": "#1d2126",
     "terminal.foreground": "#E3E1E1",
-    "gitDecoration.conflictingResourceForeground": "#BA68C8",
+    "gitDecoration.conflictingResourceForeground": "#C972D8",
     "gitDecoration.deletedResourceForeground": "#EF5350",
     "gitDecoration.ignoredResourceForeground": "#454d54",
     "gitDecoration.modifiedResourceForeground": "#F7BC62",
@@ -495,7 +495,7 @@
         "keyword.operator.expression.typeof"
       ],
       "settings": {
-        "foreground": "#BA68C8"
+        "foreground": "#C972D8"
       }
     },
     {
@@ -743,7 +743,7 @@
     {
       "scope": "keyword.other.rust",
       "settings": {
-        "foreground": "#BA68C8"
+        "foreground": "#C972D8"
       }
     },
     {
@@ -895,6 +895,48 @@
       ],
       "settings": {
         "foreground": "#E3E1E1"
+      }
+    },
+    {
+      "scope": [
+        "support.function.go"
+      ],
+      "settings": {
+        "foreground": "#4FC3F7",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": [
+        "keyword.operator.address.go",
+        "keyword.operator.pointer.go"
+      ],
+      "settings": {
+        "foreground": "#64B5F6"
+      }
+    },
+    {
+      "scope": [
+        "keyword.channel.go"
+      ],
+      "settings": {
+        "foreground": "#C972D8"
+      }
+    },
+    {
+      "scope": [
+        "storage.type.numeric.go",
+        "storage.type.string.go",
+        "storage.type.error.go",
+        "storage.type.boolean.go",
+        "storage.type.byte.go",
+        "storage.type.uintptr.go",
+        "storage.type.error.go",
+        "storage.type.rune.go",
+        "storage.type.complex.go"
+      ],
+      "settings": {
+        "foreground": "#F7BC62"
       }
     }
   ]
