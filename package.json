@@ -31,6 +31,11 @@
         "label": "One Hunter Theme Light",
         "uiTheme": "vs",
         "path": "./themes/OneHunter-Light-color-theme.json"
+      },
+      {
+        "label": "One Hunter Theme Material No Bold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneHunter-Material-No-Bold-color-theme.json"
       }
     ]
   },
@@ -45,13 +50,15 @@
           "classic",
           "material",
           "vercel",
-          "light"
+          "light",
+          "materialnobold"
         ],
         "enumDescriptions": [
           "Classic theme",
           "Material theme",
           "Vercel theme",
-          "Light theme"
+          "Light theme",
+          "Material No Bold theme"
         ],
         "description": "Select the theme variant"
       }
