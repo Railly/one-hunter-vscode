@@ -13,10 +13,7 @@ export class Theme {
     this.tokenColors = themeTokens.tokenColors;
   }
 
-  static async init(config: ThemeConfiguration) {
-    const result = {
-      ...new Theme(config),
-    };
-    return result;
+  static init(config: ThemeConfiguration): Theme {
+    return new Theme(config);
   }
 }

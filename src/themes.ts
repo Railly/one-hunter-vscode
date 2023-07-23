@@ -1,4 +1,4 @@
-enum OneHunterColors {
+export enum OneHunterColors {
   white = "white",
   black0 = "black0",
   black1 = "black1",
@@ -1103,70 +1103,63 @@ export default {
       {
         scope: [
           "keyword.other.declaration-specifier.swift",
-          "keyword.other.declaration-specifier.accessibility.swift"
+          "keyword.other.declaration-specifier.accessibility.swift",
         ],
         settings: {
           foreground: OneHunterColors.frenchRose,
-          fontStyle: OneHunterColors["keyword-weight"]
-        }
+          fontStyle: OneHunterColors["keyword-weight"],
+        },
       },
       {
         scope: [
           "support.type.swift",
           "meta.function-result.swift",
           "variable.language.swift",
-          "keyword.operator.custom.infix.swift"
-        ],
-        settings: {
-          foreground: OneHunterColors.cornflowerBlue
-        }
-      },
-      {
-        scope: "variable.parameter.function.swift",
-        settings: {
-          foreground: OneHunterColors.alto
-        }
-      },
-      {
-        scope: "entity.name.function.swift",
-        settings: {
-          foreground: OneHunterColors.cornflowerBlue,
-          fontStyle: OneHunterColors["keyword-weight"]
-        }
-      },
-      {
-        scope: [
-          "variable.parameter.function.swift",
-          "meta.parameter-clause.swift"
-        ],
-        settings: {
-          foreground: OneHunterColors.white
-        }
-      },
-      /* Golang */
-      {
-        scope: [
-          "support.function.go"
-        ],
-        settings: {
-          foreground: OneHunterColors.dodgeBlue,
-          fontStyle: OneHunterColors["keyword-weight"],
-        }
-      },
-      {
-        scope: [
-          "keyword.operator.address.go",
-          "keyword.operator.pointer.go",
+          "keyword.operator.custom.infix.swift",
         ],
         settings: {
           foreground: OneHunterColors.cornflowerBlue,
         },
       },
       {
-        // To quickly differentiate concurrency keywords 
+        scope: "variable.parameter.function.swift",
+        settings: {
+          foreground: OneHunterColors.alto,
+        },
+      },
+      {
+        scope: "entity.name.function.swift",
+        settings: {
+          foreground: OneHunterColors.cornflowerBlue,
+          fontStyle: OneHunterColors["keyword-weight"],
+        },
+      },
+      {
         scope: [
-          "keyword.channel.go",
+          "variable.parameter.function.swift",
+          "meta.parameter-clause.swift",
         ],
+        settings: {
+          foreground: OneHunterColors.white,
+        },
+      },
+      /* Golang */
+      {
+        scope: ["support.function.go"],
+        settings: {
+          foreground: OneHunterColors.dodgeBlue,
+          fontStyle: OneHunterColors["keyword-weight"],
+        },
+      },
+      {
+        scope: ["keyword.operator.address.go", "keyword.operator.pointer.go"],
+        settings: {
+          foreground: OneHunterColors.cornflowerBlue,
+        },
+      },
+      {
+        // To quickly differentiate concurrency keywords
+        scope: ["keyword.channel.go"],
         settings: {
           foreground: OneHunterColors.heliotrope,
         },
@@ -1186,7 +1179,7 @@ export default {
         settings: {
           foreground: OneHunterColors.saffronMango,
         },
-      }
+      },
     ],
   },
 };

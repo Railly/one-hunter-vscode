@@ -13,22 +13,22 @@ export function writeFile(path: string, data: unknown): Promise<void> {
 async function generateTheme() {
   writeFile(
     join(__dirname, "..", "themes", "OneHunter-Classic-color-theme.json"),
-    await Theme.init(defaultConfig)
+    Theme.init(defaultConfig)
   );
 
   writeFile(
     join(__dirname, "..", "themes", "OneHunter-Material-color-theme.json"),
-    await Theme.init(materialConfig)
+    Theme.init(materialConfig)
   );
 
   writeFile(
     join(__dirname, "..", "themes", "OneHunter-Vercel-color-theme.json"),
-    await Theme.init(vercelConfig)
+    Theme.init(vercelConfig)
   );
 
   writeFile(
     join(__dirname, "..", "themes", "OneHunter-Light-color-theme.json"),
-    await Theme.init(lightConfig)
+    Theme.init(lightConfig)
   );
 }
 
