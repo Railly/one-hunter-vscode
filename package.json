@@ -77,9 +77,11 @@
     "url": "https://github.com/Railly/one-hunter-vscode.git"
   },
   "scripts": {
-    "generate": "tsc ./scripts/generate-theme.ts && node ./dist/generate-theme.js",
+    "generate:vscode": "ts-node --project scripts/tsconfig.json scripts/generate-theme.ts",
+    "generate:iterm2": "ts-node --project scripts/tsconfig.json scripts/generate-iterm2-theme.ts",
+    "generate": "npm run generate:vscode && npm run generate:iterm2",
     "build:ts": "tsc -p src",
-    "build:theme": "ts-node --project scripts/tsconfig.json scripts/generate-theme.ts",
+    "build:theme": "npm run generate",
     "build": "npm run build:ts && npm run build:theme",
     "publish": "vsce publish",
     "package": "vsce package"

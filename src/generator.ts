@@ -4,6 +4,6 @@ import { Theme } from "./Theme/index";
 
 export const generateTheme = {
   default: async function () {
-    return await Theme.init(defaultSettings);
+    return Theme.init(defaultSettings);
   },
 };

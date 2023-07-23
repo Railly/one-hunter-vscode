@@ -2,7 +2,7 @@ import { ThemeConfiguration, TokenColor } from "./types";
 import themeData from "../themes";
 
 export function configFactory(configuration: ThemeConfiguration) {
-  const rawEditorColors: typeof themeData.editorThemes["one-hunter"] =
+  const rawEditorColors: (typeof themeData.editorThemes)["one-hunter"] =
     JSON.parse(
       JSON.stringify(themeData.editorThemes[configuration.editorTheme])
     );
