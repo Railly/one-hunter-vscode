@@ -938,6 +938,22 @@
       "settings": {
         "foreground": "#FF7E00"
       }
+    },
+    {
+      "scope": [
+        "entity.name.tag.astro"
+      ],
+      "settings": {
+        "foreground": "#E1239A"
+      }
+    },
+    {
+      "scope": [
+        "support.class.component.astro"
+      ],
+      "settings": {
+        "foreground": "#E1239A"
+      }
     }
   ]
 }
