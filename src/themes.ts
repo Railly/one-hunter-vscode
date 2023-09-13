@@ -1180,6 +1180,20 @@ export default {
           foreground: OneHunterColors.saffronMango,
         },
       },
+      /* Astro */
+      {
+        scope: ["entity.name.tag.astro"],
+        settings: {
+          foreground: OneHunterColors.frenchRose,
+        },
+      },
+      {
+        scope: ["support.class.component.astro"],
+        settings: {
+          foreground: OneHunterColors["support.class.component.tsx"],
+          fontStyle: "",
+        },
+      },
     ],
   },
 };
