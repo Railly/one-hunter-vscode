@@ -1,9 +1,11 @@
 import { workspace } from "vscode";
-import * as defaultSettings from "./Theme/config/defaultConfig.json";
-import { Theme } from "./Theme/index";
+import { Theme } from "./themes/index";
 
 export const generateTheme = {
   default: async function () {
-    return Theme.init(defaultSettings);
+    return Theme.init({
+      editorTheme: "one-hunter",
+      variant: "default",
+    });
   },
 };

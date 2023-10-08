@@ -1,15 +1,12 @@
-import { Theme } from "../src/Theme/index";
-import * as defaultConfig from "../src/Theme/config/defaultConfig.json";
-import * as materialConfig from "../src/Theme/config/materialConfig.json";
-import * as vercelConfig from "../src/Theme/config/vercelConfig.json";
-import * as lightConfig from "../src/Theme/config/lightConfig.json";
 import { promises as fs } from "fs";
 import xmlbuilder from "xmlbuilder";
 import { dirname, resolve } from "path";
-import themeData, { OneHunterColors } from "../src/themes";
+import themeData, { OneHunterColors } from "../themes";
+import { Theme } from "../themes/index";
+import { THEME_NAMES, THEME_VARIANTS } from "../themes/variants";
 
 function convertToRGB(color: string): { r: number; g: number; b: number } {
-  const hex = color.substring(1); // remove #
+  const hex = color.substring(1);
   const r = parseInt(hex.substring(0, 2), 16) / 255;
   const g = parseInt(hex.substring(2, 4), 16) / 255;
   const b = parseInt(hex.substring(4, 6), 16) / 255;
@@ -70,26 +67,18 @@ async function writeXMLFile(path: string, data: string): Promise<void> {
 }
 
 async function generateIterm2Themes() {
-  const themes = {
-    "OneHunter-Classic": Theme.init(defaultConfig),
-    "OneHunter-Material": Theme.init(materialConfig),
-    "OneHunter-Vercel": Theme.init(vercelConfig),
-    "OneHunter-Light": Theme.init(lightConfig),
-  };
-
-  const themeVariantNames = {
-    "OneHunter-Classic": "classic",
-    "OneHunter-Material": "material",
-    "OneHunter-Vercel": "vercel",
-    "OneHunter-Light": "light",
-  };
-
-  for (const [name, theme] of Object.entries(themes)) {
-    const filePath = `./themes/iterm2/${name}.itermcolors.xml`;
-    await ensureDirectoryExists(filePath);
-    const xml = createIterm2Theme(themeVariantNames[name], theme);
-    await writeXMLFile(filePath, xml);
-  }
+  THEME_VARIANTS.forEach((variant) => {
+    THEME_NAMES.forEach((themeName) => {
+      const theme = Theme.init({
+        editorTheme: "one-hunter",
+        variant,
+      });
+      const filePath = `./themes/iterm2/${themeName[variant]}.itermcolors.xml`;
+      ensureDirectoryExists(filePath);
+      const xml = createIterm2Theme(variant, theme);
+      writeXMLFile(filePath, xml);
+    });
+  });
 }
 
 generateIterm2Themes();
