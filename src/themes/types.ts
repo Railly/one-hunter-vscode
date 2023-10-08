@@ -1,5 +1,3 @@
-import { OneHunterColors } from "../themes";
-
 export interface TokenColor {
   name?: string;
   scope: string | string[];

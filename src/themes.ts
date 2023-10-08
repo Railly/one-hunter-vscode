@@ -1,40 +1,60 @@
 export enum OneHunterColors {
+  // Basic Colors
   white = "white",
-  black0 = "black0",
-  black1 = "black1",
-  frenchRose = "frenchRose",
-  frenchRoseActive = "frenchRoseActive",
-  cornflowerBlue = "cornflowerBlue",
-  cornflowerBlueActive = "cornflowerBlueActive",
-  dodgeBlue = "dodgeBlue",
-  dodgeBlueActive = "dodgeBlueActive",
-  heliotrope = "heliotrope",
-  heliotropeActive = "heliotropeActive",
-  saffronMango = "saffronMango",
-  turquoise = "turquoise",
-  turquoiseActive = "turquoiseActive",
-  shark = "shark",
-  sharkHover = "sharkHover",
-  sharkFocus = "sharkFocus",
-  sharkActive = "sharkActive",
-  alto = "alto",
-  mercury = "mercury",
+  blackBase = "blackBase",
+  blackDark = "blackDark",
+
+  // Pink Tones
+  pinkBase = "pinkBase",
+  pinkOnActive = "pinkOnActive",
+
+  // Blue Tones
+  blueBase = "blueBase",
+  blueOnActive = "blueOnActive",
+  blueDark = "blueDark",
+  blueDarkOnActive = "blueDarkOnActive",
+
+  // Purple Tones
+  purpleBase = "purpleBase",
+  purpleOnActive = "purpleOnActive",
+
+  // Yellow Tones
+  yellowBase = "yellowBase",
+
+  // Cyan Tones
+  cyanBase = "cyanBase",
+  cyanOnActive = "cyanOnActive",
+
+  // Gray Tones
+  grayLight = "grayLight",
   gray = "gray",
-  gallery = "gallery",
-  cinnabar = "cinnabar",
-  slateGray = "slateGray",
-  pear = "pear",
-  alizarinCrimson = "alizarinCrimson",
-  pistachio = "pistachio",
-  chenin = "chenin",
-  gullGray = "gullGray",
-  regentStBlue = "regentStBlue",
-  woodBark = "woodBark",
-  outerSpace = "outerSpace",
+  grayDarkBase = "grayDarkBase",
+  grayDarkOnHover = "grayDarkOnHover",
+  grayDarkOnFocus = "grayDarkOnFocus",
+  grayDarkOnActive = "grayDarkOnActive",
+
+  // ... your other colors here ...
+
+  grayMedium = "grayMedium",
+  graySoft = "graySoft",
+  red = "red",
+  slate = "slate",
+  green = "green",
+  redDark = "redDark",
+  greenLight = "greenLight",
+  yellowLight = "yellowLight",
+  grayBlue = "grayBlue",
+  blueSoft = "blueSoft",
+  brown = "brown",
+  blackBlue = "blackBlue",
+
+  // System Colors
   info = "info",
   warn = "warn",
   error = "error",
   debug = "debug",
+
+  // Special Identifiers (kept as is)
   "meta.object-literal.key.tsx" = "meta.object-literal.key.tsx",
   "entity.name.tag.tsx" = "entity.name.tag.tsx",
   "support.class.component.tsx" = "support.class.component.tsx",
@@ -45,37 +65,37 @@ export default {
   textColors: {
     classic: {
       white: "#E0E0E0",
-      black0: "#101315",
-      black1: "#14181b",
-      frenchRose: "#F4457D",
-      frenchRoseActive: "#EE808B",
-      cornflowerBlue: "#53A1FA",
-      cornflowerBlueActive: "#A7C7ED",
-      dodgeBlue: "#43AAF9",
-      dodgeBlueActive: "#A7D1F5",
-      heliotrope: "#B267E6",
-      heliotropeActive: "#D7C9F0",
-      saffronMango: "#F9C35A",
-      turquoise: "#5BD1B9",
-      turquoiseActive: "#B7F0E5",
-      shark: "#191d21",
-      sharkHover: "#1d2226",
-      sharkFocus: "#3A434D",
-      sharkActive: "#45505b",
-      alto: "#E0E0E0",
-      mercury: "#E6E6E6",
+      blackBase: "#101315",
+      blackDark: "#14181b",
+      pinkBase: "#F4457D",
+      pinkOnActive: "#EE808B",
+      blueBase: "#53A1FA",
+      blueOnActive: "#A7C7ED",
+      blueDark: "#43AAF9",
+      blueDarkOnActive: "#A7D1F5",
+      purpleBase: "#B267E6",
+      purpleOnActive: "#D7C9F0",
+      yellowBase: "#F9C35A",
+      cyanBase: "#5BD1B9",
+      cyanOnActive: "#B7F0E5",
+      grayDarkBase: "#191d21",
+      grayDarkOnHover: "#1d2226",
+      grayDarkOnFocus: "#3A434D",
+      grayDarkOnActive: "#45505b",
+      grayLight: "#E0E0E0",
+      grayMedium: "#E6E6E6",
       gray: "#888888",
-      gallery: "#EFEFEF",
-      cinnabar: "#E34234",
-      slateGray: "#718493",
-      pear: "#A6E22E",
-      alizarinCrimson: "#E61F44",
-      pistachio: "#8FBE00",
-      chenin: "#E6DB74",
-      gullGray: "#9CAAB4",
-      regentStBlue: "#9FBDE0",
-      woodBark: "#664E4D",
-      outerSpace: "#34393E",
+      graySoft: "#EFEFEF",
+      red: "#E34234",
+      slate: "#718493",
+      green: "#A6E22E",
+      redDark: "#E61F44",
+      greenLight: "#8FBE00",
+      yellowLight: "#E6DB74",
+      grayBlue: "#9CAAB4",
+      blueSoft: "#9FBDE0",
+      brown: "#664E4D",
+      blackBlue: "#34393E",
       info: "#6796E6",
       warn: "#CD9731",
       error: "#F44747",
@@ -87,37 +107,37 @@ export default {
     },
     material: {
       white: "#E3E1E1",
-      black0: "#15181b",
-      black1: "#191d21",
-      frenchRose: "#F06292",
-      frenchRoseActive: "#EC407A",
-      cornflowerBlue: "#64B5F6",
-      cornflowerBlueActive: "#90CAF9",
-      dodgeBlue: "#4FC3F7",
-      dodgeBlueActive: "#81D4FA",
-      heliotrope: "#C972D8",
-      heliotropeActive: "#E1BEE7",
-      saffronMango: "#F7BC62",
-      turquoise: "#66dfc4",
-      turquoiseActive: "#B2EBF2",
-      shark: "#1d2126",
-      sharkHover: "#21252a",
-      sharkFocus: "#3a4147",
-      sharkActive: "#454d54",
-      alto: "#E3E1E1",
-      mercury: "#E0E0E0",
+      blackBase: "#15181b",
+      blackDark: "#191d21",
+      pinkBase: "#F06292",
+      pinkOnActive: "#EC407A",
+      blueBase: "#64B5F6",
+      blueOnActive: "#90CAF9",
+      blueDark: "#4FC3F7",
+      blueDarkOnActive: "#81D4FA",
+      purpleBase: "#C972D8",
+      purpleOnActive: "#E1BEE7",
+      yellowBase: "#F7BC62",
+      cyanBase: "#66dfc4",
+      cyanOnActive: "#B2EBF2",
+      grayDarkBase: "#1d2126",
+      grayDarkOnHover: "#21252a",
+      grayDarkOnFocus: "#3a4147",
+      grayDarkOnActive: "#454d54",
+      grayLight: "#E3E1E1",
+      grayMedium: "#E0E0E0",
       gray: "#9E9E9E",
-      gallery: "#F5F5F5",
-      cinnabar: "#EF5350",
-      slateGray: "#90A4AE",
-      pear: "#AED581",
-      alizarinCrimson: "#EF5350",
-      pistachio: "#AED581",
-      chenin: "#FFD54F",
-      gullGray: "#B0BEC5",
-      regentStBlue: "#4FC3F7",
-      woodBark: "#3E2723",
-      outerSpace: "#3B4145",
+      graySoft: "#F5F5F5",
+      red: "#EF5350",
+      slate: "#90A4AE",
+      green: "#AED581",
+      redDark: "#EF5350",
+      greenLight: "#AED581",
+      yellowLight: "#FFD54F",
+      grayBlue: "#B0BEC5",
+      blueSoft: "#4FC3F7",
+      brown: "#3E2723",
+      blackBlue: "#3B4145",
       info: "#4FC3F7",
       warn: "#FFA726",
       error: "#EF5350",
@@ -129,37 +149,37 @@ export default {
     },
     vercel: {
       white: "#DCE3EA",
-      black0: "#000000",
-      black1: "#010101",
-      frenchRose: "#DD4F7D",
-      frenchRoseActive: "#DD4F7D",
-      cornflowerBlue: "#43AAF9",
-      cornflowerBlueActive: "#A7D1F5",
-      dodgeBlue: "#43AAF9",
-      dodgeBlueActive: "#A7D1F5",
-      heliotrope: "#B267E6",
-      heliotropeActive: "#D7C9F0",
-      saffronMango: "#FAC760",
-      turquoise: "#5BD1B9",
-      turquoiseActive: "#B7F0E5",
-      shark: "#000000",
-      sharkHover: "#0A0A0A",
-      sharkFocus: "#0A0A0A",
-      sharkActive: "#454d54",
-      alto: "#DCE3EA",
-      mercury: "#E6E6E6",
+      blackBase: "#000000",
+      blackDark: "#010101",
+      pinkBase: "#DD4F7D",
+      pinkOnActive: "#DD4F7D",
+      blueBase: "#43AAF9",
+      blueOnActive: "#A7D1F5",
+      blueDark: "#43AAF9",
+      blueDarkOnActive: "#A7D1F5",
+      purpleBase: "#B267E6",
+      purpleOnActive: "#D7C9F0",
+      yellowBase: "#FAC760",
+      cyanBase: "#5BD1B9",
+      cyanOnActive: "#B7F0E5",
+      grayDarkBase: "#000000",
+      grayDarkOnHover: "#0A0A0A",
+      grayDarkOnFocus: "#0A0A0A",
+      grayDarkOnActive: "#454d54",
+      grayLight: "#DCE3EA",
+      grayMedium: "#E6E6E6",
       gray: "#888888",
-      gallery: "#EFEFEF",
-      cinnabar: "#E34234",
-      slateGray: "#718493",
-      pear: "#A6E22E",
-      alizarinCrimson: "#E61F44",
-      pistachio: "#8FBE00",
-      chenin: "#E6DB74",
-      gullGray: "#B0BEC5",
-      regentStBlue: "#9FBDE0",
-      woodBark: "#664E4D",
-      outerSpace: "#34393E",
+      graySoft: "#EFEFEF",
+      red: "#E34234",
+      slate: "#718493",
+      green: "#A6E22E",
+      redDark: "#E61F44",
+      greenLight: "#8FBE00",
+      yellowLight: "#E6DB74",
+      grayBlue: "#B0BEC5",
+      blueSoft: "#9FBDE0",
+      brown: "#664E4D",
+      blackBlue: "#34393E",
       info: "#6796E6",
       warn: "#CD9731",
       error: "#F44747",
@@ -171,37 +191,37 @@ export default {
     },
     light: {
       white: "#f4f4f4",
-      black0: "#eaeaea",
-      black1: "#f8f8f8",
-      frenchRose: "#E1239A",
-      frenchRoseActive: "#E1239A",
-      cornflowerBlue: "#0488DB",
-      cornflowerBlueActive: "#0488DB",
-      dodgeBlue: "#0488DB",
-      dodgeBlueActive: "#0488DB",
-      heliotrope: "#B267E6",
-      heliotropeActive: "#D7C9F0",
-      saffronMango: "#FF7E00",
-      turquoise: "#0BA463",
-      turquoiseActive: "#5BD1B9",
-      shark: "#ffffff",
-      sharkHover: "#ffffff",
-      sharkFocus: "#B3B3B3",
-      sharkActive: "#ADADAD",
-      alto: "#313131",
-      mercury: "#E6E6E6",
+      blackBase: "#eaeaea",
+      blackDark: "#f8f8f8",
+      pinkBase: "#E1239A",
+      pinkOnActive: "#E1239A",
+      blueBase: "#0488DB",
+      blueOnActive: "#0488DB",
+      blueDark: "#0488DB",
+      blueDarkOnActive: "#0488DB",
+      purpleBase: "#B267E6",
+      purpleOnActive: "#D7C9F0",
+      yellowBase: "#FF7E00",
+      cyanBase: "#0BA463",
+      cyanOnActive: "#5BD1B9",
+      grayDarkBase: "#ffffff",
+      grayDarkOnHover: "#ffffff",
+      grayDarkOnFocus: "#B3B3B3",
+      grayDarkOnActive: "#ADADAD",
+      grayLight: "#313131",
+      grayMedium: "#E6E6E6",
       gray: "#A8A8A8",
-      gallery: "#5D5D5D",
-      cinnabar: "#E34234",
-      slateGray: "#d1d1d1",
-      pear: "#A6E22E",
-      alizarinCrimson: "#E61F44",
-      pistachio: "#8FBE00",
-      chenin: "#E6DB74",
-      gullGray: "#d1d1d1",
-      regentStBlue: "#689FDE",
-      woodBark: "#664E4D",
-      outerSpace: "#F4F4F4",
+      graySoft: "#5D5D5D",
+      red: "#E34234",
+      slate: "#d1d1d1",
+      green: "#A6E22E",
+      redDark: "#E61F44",
+      greenLight: "#8FBE00",
+      yellowLight: "#E6DB74",
+      grayBlue: "#d1d1d1",
+      blueSoft: "#689FDE",
+      brown: "#664E4D",
+      blackBlue: "#F4F4F4",
       info: "#6796E6",
       warn: "#CD9731",
       error: "#F44747",
@@ -213,175 +233,174 @@ export default {
     },
   },
   editorThemes: {
-    // "one-hunter": () => import("./data/one-hunter"),
     "one-hunter": {
-      "editor.background": OneHunterColors.shark,
-      "editor.foreground": OneHunterColors.alto,
-      "editor.hoverHighlightBackground": `${OneHunterColors.frenchRose}22`,
-      "editor.lineHighlightBackground": `${OneHunterColors.shark}22`,
-      "editor.selectionBackground": `${OneHunterColors.cornflowerBlue}55`,
-      "editor.wordHighlightBackground": `${OneHunterColors.cornflowerBlue}22`,
-      "editor.wordHighlightStrongBackground": `${OneHunterColors.cornflowerBlue}22`,
-      "editorBracketMatch.background": `${OneHunterColors.frenchRose}44`,
-      "editorBracketMatch.border": OneHunterColors.cornflowerBlue,
-      "editorCursor.foreground": OneHunterColors.alto,
-      "editorGutter.addedBackground": OneHunterColors.turquoise,
-      "editorGutter.background": OneHunterColors.shark,
-      "editorGutter.deletedBackground": OneHunterColors.alizarinCrimson,
-      "editorGutter.modifiedBackground": OneHunterColors.saffronMango,
+      "editor.background": OneHunterColors.grayDarkBase,
+      "editor.foreground": OneHunterColors.grayLight,
+      "editor.hoverHighlightBackground": `${OneHunterColors.pinkBase}22`,
+      "editor.lineHighlightBackground": `${OneHunterColors.grayDarkBase}22`,
+      "editor.selectionBackground": `${OneHunterColors.blueBase}55`,
+      "editor.wordHighlightBackground": `${OneHunterColors.blueBase}22`,
+      "editor.wordHighlightStrongBackground": `${OneHunterColors.blueBase}22`,
+      "editorBracketMatch.background": `${OneHunterColors.pinkBase}44`,
+      "editorBracketMatch.border": OneHunterColors.blueBase,
+      "editorCursor.foreground": OneHunterColors.grayLight,
+      "editorGutter.addedBackground": OneHunterColors.cyanBase,
+      "editorGutter.background": OneHunterColors.grayDarkBase,
+      "editorGutter.deletedBackground": OneHunterColors.redDark,
+      "editorGutter.modifiedBackground": OneHunterColors.yellowBase,
       // "editorIndentGuide.background": "#2c3138", // TO-CHECK
-      "editorIndentGuide.background": `${OneHunterColors.shark}88`,
-      "editorInlayHint.background": OneHunterColors.outerSpace,
+      "editorIndentGuide.background": `${OneHunterColors.grayDarkBase}88`,
+      "editorInlayHint.background": OneHunterColors.blackBlue,
       // "editorInlayHint.foreground": "#d0cece", // TO-CHECK
-      "editorInlayHint.foreground": OneHunterColors.alto,
-      "editorLineNumber.foreground": OneHunterColors.sharkActive,
-      "editorLink.activeForeground": OneHunterColors.frenchRose,
-      "editorOverviewRuler.addedForeground": OneHunterColors.turquoise,
-      "editorOverviewRuler.deletedForeground": OneHunterColors.alizarinCrimson,
-      "editorOverviewRuler.errorForeground": OneHunterColors.alizarinCrimson,
-      "editorOverviewRuler.findMatchForeground": `${OneHunterColors.cornflowerBlue}55`,
-      "editorOverviewRuler.infoForeground": OneHunterColors.heliotrope,
-      "editorOverviewRuler.modifiedForeground": OneHunterColors.saffronMango,
-      "editorOverviewRuler.warningForeground": OneHunterColors.saffronMango,
+      "editorInlayHint.foreground": OneHunterColors.grayLight,
+      "editorLineNumber.foreground": OneHunterColors.grayDarkOnActive,
+      "editorLink.activeForeground": OneHunterColors.pinkBase,
+      "editorOverviewRuler.addedForeground": OneHunterColors.cyanBase,
+      "editorOverviewRuler.deletedForeground": OneHunterColors.redDark,
+      "editorOverviewRuler.errorForeground": OneHunterColors.redDark,
+      "editorOverviewRuler.findMatchForeground": `${OneHunterColors.blueBase}55`,
+      "editorOverviewRuler.infoForeground": OneHunterColors.purpleBase,
+      "editorOverviewRuler.modifiedForeground": OneHunterColors.yellowBase,
+      "editorOverviewRuler.warningForeground": OneHunterColors.yellowBase,
       // "editorRuler.foreground": "#2c3138", // TO-CHECK
-      "editorRuler.foreground": OneHunterColors.outerSpace,
-      "editorSuggestWidget.foreground": OneHunterColors.alto,
-      "editorSuggestWidget.highlightForeground": OneHunterColors.frenchRose,
-      "editorSuggestWidget.selectedBackground": OneHunterColors.sharkActive,
+      "editorRuler.foreground": OneHunterColors.blackBlue,
+      "editorSuggestWidget.foreground": OneHunterColors.grayLight,
+      "editorSuggestWidget.highlightForeground": OneHunterColors.pinkBase,
+      "editorSuggestWidget.selectedBackground":
+        OneHunterColors.grayDarkOnActive,
       // "editorWhitespace.foreground": "#2c3138", // TO-CHECK
-      "editorWhitespace.foreground": OneHunterColors.outerSpace,
-      "editorWidget.background": OneHunterColors.outerSpace,
-      "editorWidget.border": OneHunterColors.sharkActive,
+      "editorWhitespace.foreground": OneHunterColors.blackBlue,
+      "editorWidget.background": OneHunterColors.blackBlue,
+      "editorWidget.border": OneHunterColors.grayDarkOnActive,
 
       /* Sidebar */
-      "sideBar.background": OneHunterColors.black1,
-      "sideBar.foreground": OneHunterColors.alto,
-      "sideBarSectionHeader.background": OneHunterColors.black0,
-      "sideBarSectionHeader.foreground": OneHunterColors.alto,
+      "sideBar.background": OneHunterColors.blackDark,
+      "sideBar.foreground": OneHunterColors.grayLight,
+      "sideBarSectionHeader.background": OneHunterColors.blackBase,
+      "sideBarSectionHeader.foreground": OneHunterColors.grayLight,
 
       /* Files list */
-      "badge.background": OneHunterColors.frenchRose,
+      "badge.background": OneHunterColors.pinkBase,
       "badge.foreground": OneHunterColors.white,
-      "list.activeSelectionBackground": `${OneHunterColors.frenchRose}55`,
-      "list.activeSelectionForeground": OneHunterColors.alto,
-      "list.focusBackground": OneHunterColors.sharkFocus,
-      "list.hoverBackground": OneHunterColors.sharkHover,
-      "list.inactiveSelectionBackground": OneHunterColors.shark,
+      "list.activeSelectionBackground": `${OneHunterColors.pinkBase}55`,
+      "list.activeSelectionForeground": OneHunterColors.grayLight,
+      "list.focusBackground": OneHunterColors.grayDarkOnFocus,
+      "list.hoverBackground": OneHunterColors.grayDarkOnHover,
+      "list.inactiveSelectionBackground": OneHunterColors.grayDarkBase,
 
       /* Title bar */
-      "titleBar.activeBackground": OneHunterColors.black0,
+      "titleBar.activeBackground": OneHunterColors.blackBase,
 
       /* Activity bar */
-      "activityBar.background": OneHunterColors.black0,
-      "activityBar.foreground": OneHunterColors.alto,
-      "activityBarBadge.background": OneHunterColors.frenchRose,
+      "activityBar.background": OneHunterColors.blackBase,
+      "activityBar.foreground": OneHunterColors.grayLight,
+      "activityBarBadge.background": OneHunterColors.pinkBase,
       "activityBarBadge.foreground": OneHunterColors.white,
 
       /* Tabs */
-      "editorGroupHeader.tabsBackground": OneHunterColors.sharkHover,
+      "editorGroupHeader.tabsBackground": OneHunterColors.grayDarkOnHover,
       // "tab.inactiveBackground": "#22272d", // TO-CHECK
-      "tab.inactiveBackground": `${OneHunterColors.sharkFocus}44`,
+      "tab.inactiveBackground": `${OneHunterColors.grayDarkOnFocus}44`,
       // "tab.inactiveForeground": "#728394", // TO-CHECK
-      "tab.inactiveForeground": `${OneHunterColors.alto}88`,
-      "tab.activeModifiedBorder": OneHunterColors.saffronMango,
-      "tab.inactiveModifiedBorder": OneHunterColors.cornflowerBlue,
-      "tab.unfocusedActiveModifiedBorder": `${OneHunterColors.saffronMango}88`,
-      "tab.unfocusedInactiveModifiedBorder": `${OneHunterColors.cornflowerBlue}88`,
+      "tab.inactiveForeground": `${OneHunterColors.grayLight}88`,
+      "tab.activeModifiedBorder": OneHunterColors.yellowBase,
+      "tab.inactiveModifiedBorder": OneHunterColors.blueBase,
+      "tab.unfocusedActiveModifiedBorder": `${OneHunterColors.yellowBase}88`,
+      "tab.unfocusedInactiveModifiedBorder": `${OneHunterColors.blueBase}88`,
 
       /* Terminal */
       // "terminal.ansiBlack": "#242a2f", // TO-CHECK
-      "terminal.ansiBlack": OneHunterColors.outerSpace,
-      "terminal.ansiBlue": OneHunterColors.cornflowerBlue,
-      "terminal.ansiBrightBlack": OneHunterColors.sharkActive,
-      "terminal.ansiBrightBlue": OneHunterColors.cornflowerBlueActive,
-      "terminal.ansiBrightCyan": OneHunterColors.heliotropeActive,
+      "terminal.ansiBlack": OneHunterColors.blackBlue,
+      "terminal.ansiBlue": OneHunterColors.blueBase,
+      "terminal.ansiBrightBlack": OneHunterColors.grayDarkOnActive,
+      "terminal.ansiBrightBlue": OneHunterColors.blueOnActive,
+      "terminal.ansiBrightCyan": OneHunterColors.purpleOnActive,
       // "terminal.ansiBrightGreen": "#f4adb4", // TO-CHECK
-      "terminal.ansiBrightGreen": OneHunterColors.turquoiseActive,
-      "terminal.ansiBrightMagenta": OneHunterColors.frenchRoseActive,
+      "terminal.ansiBrightGreen": OneHunterColors.cyanOnActive,
+      "terminal.ansiBrightMagenta": OneHunterColors.pinkOnActive,
       // "terminal.ansiBrightRed": "#f03e5f",
-      "terminal.ansiBrightRed": OneHunterColors.alizarinCrimson,
-      "terminal.ansiBrightWhite": OneHunterColors.alto,
+      "terminal.ansiBrightRed": OneHunterColors.redDark,
+      "terminal.ansiBrightWhite": OneHunterColors.grayLight,
       // "terminal.ansiBrightYellow": "#a7c7ed",// TO-CHECK
-      "terminal.ansiBrightYellow": OneHunterColors.cornflowerBlueActive,
+      "terminal.ansiBrightYellow": OneHunterColors.blueOnActive,
       // "terminal.ansiCyan": "#9b78db",// TO-CHECK
-      "terminal.ansiCyan": OneHunterColors.heliotrope,
+      "terminal.ansiCyan": OneHunterColors.purpleBase,
       // "terminal.ansiGreen": "#f4457d", // TO-CHECK
-      "terminal.ansiGreen": OneHunterColors.turquoise,
-      "terminal.ansiMagenta": OneHunterColors.frenchRose,
+      "terminal.ansiGreen": OneHunterColors.cyanBase,
+      "terminal.ansiMagenta": OneHunterColors.pinkBase,
       // "terminal.ansiRed": "#ba0e2e", // TO-CHECK
-      "terminal.ansiRed": OneHunterColors.alizarinCrimson,
-      "terminal.ansiWhite": OneHunterColors.alto,
-      "terminal.ansiYellow": OneHunterColors.cornflowerBlue,
-      "terminal.background": OneHunterColors.shark,
-      "terminal.foreground": OneHunterColors.alto,
+      "terminal.ansiRed": OneHunterColors.redDark,
+      "terminal.ansiWhite": OneHunterColors.grayLight,
+      "terminal.ansiYellow": OneHunterColors.blueBase,
+      "terminal.background": OneHunterColors.grayDarkBase,
+      "terminal.foreground": OneHunterColors.grayLight,
 
       /* Git */
       // "gitDecoration.conflictingResourceForeground": "#9d37fc", // TO-CHECK
-      "gitDecoration.conflictingResourceForeground": OneHunterColors.heliotrope,
+      "gitDecoration.conflictingResourceForeground": OneHunterColors.purpleBase,
       // "gitDecoration.deletedResourceForeground": "#e61f44", // TO-CHECK
-      "gitDecoration.deletedResourceForeground":
-        OneHunterColors.alizarinCrimson,
+      "gitDecoration.deletedResourceForeground": OneHunterColors.redDark,
       // "gitDecoration.ignoredResourceForeground": "#5b6978", // TO-CHECK
-      "gitDecoration.ignoredResourceForeground": OneHunterColors.sharkActive,
-      "gitDecoration.modifiedResourceForeground": OneHunterColors.saffronMango,
-      "gitDecoration.untrackedResourceForeground": OneHunterColors.turquoise,
+      "gitDecoration.ignoredResourceForeground":
+        OneHunterColors.grayDarkOnActive,
+      "gitDecoration.modifiedResourceForeground": OneHunterColors.yellowBase,
+      "gitDecoration.untrackedResourceForeground": OneHunterColors.cyanBase,
 
       /* Status bar */
-      "statusBar.background": OneHunterColors.black0,
-      "statusBar.foreground": OneHunterColors.alto,
-      "statusBar.noFolderBackground": OneHunterColors.black0,
+      "statusBar.background": OneHunterColors.blackBase,
+      "statusBar.foreground": OneHunterColors.grayLight,
+      "statusBar.noFolderBackground": OneHunterColors.blackBase,
 
       /* Scrollbar */
       // "scrollbar.shadow": "#030304", // TO-CHECK
-      "scrollbar.shadow": OneHunterColors.black0,
-      "scrollbarSlider.activeBackground": `${OneHunterColors.frenchRose}aa`,
-      "scrollbarSlider.background": `${OneHunterColors.sharkActive}aa`,
-      "scrollbarSlider.hoverBackground": `${OneHunterColors.frenchRose}55`,
+      "scrollbar.shadow": OneHunterColors.blackBase,
+      "scrollbarSlider.activeBackground": `${OneHunterColors.pinkBase}aa`,
+      "scrollbarSlider.background": `${OneHunterColors.grayDarkOnActive}aa`,
+      "scrollbarSlider.hoverBackground": `${OneHunterColors.pinkBase}55`,
 
       /* Misc */
-      "button.background": OneHunterColors.cornflowerBlue,
-      "button.foreground": OneHunterColors.alto,
-      "dropdown.background": OneHunterColors.black0,
-      "dropdown.border": OneHunterColors.black0,
-      "dropdown.foreground": OneHunterColors.alto,
-      "extensionButton.prominentBackground": OneHunterColors.frenchRose,
-      "extensionButton.prominentForeground": OneHunterColors.alto,
-      "extensionButton.prominentHoverBackground":
-        OneHunterColors.frenchRoseActive,
+      "button.background": OneHunterColors.blueBase,
+      "button.foreground": OneHunterColors.grayLight,
+      "dropdown.background": OneHunterColors.blackBase,
+      "dropdown.border": OneHunterColors.blackBase,
+      "dropdown.foreground": OneHunterColors.grayLight,
+      "extensionButton.prominentBackground": OneHunterColors.pinkBase,
+      "extensionButton.prominentForeground": OneHunterColors.grayLight,
+      "extensionButton.prominentHoverBackground": OneHunterColors.pinkOnActive,
       // focusBorder: "#f4457d",
-      focusBorder: OneHunterColors.frenchRose,
-      foreground: OneHunterColors.alto,
+      focusBorder: OneHunterColors.pinkBase,
+      foreground: OneHunterColors.grayLight,
       // "input.background": "#0e1012", // TO-CHECK
-      "input.background": OneHunterColors.black0,
+      "input.background": OneHunterColors.blackBase,
       // "input.border": "#3a434d", // TO-CHECK
-      "input.border": OneHunterColors.sharkActive,
-      "input.foreground": OneHunterColors.alto,
+      "input.border": OneHunterColors.grayDarkOnActive,
+      "input.foreground": OneHunterColors.grayLight,
       // "input.placeholderForeground": "#414b55", // TO-CHECK
-      "input.placeholderForeground": OneHunterColors.sharkActive,
-      "inputOption.activeBorder": OneHunterColors.cornflowerBlue,
+      "input.placeholderForeground": OneHunterColors.grayDarkOnActive,
+      "inputOption.activeBorder": OneHunterColors.blueBase,
       // "panel.background": "#23282d", // TO-CHECK
-      "panel.background": OneHunterColors.shark,
-      "panel.border": OneHunterColors.sharkActive,
-      "panelTitle.activeBorder": OneHunterColors.frenchRose,
+      "panel.background": OneHunterColors.grayDarkBase,
+      "panel.border": OneHunterColors.grayDarkOnActive,
+      "panelTitle.activeBorder": OneHunterColors.pinkBase,
       // "panelTitle.inactiveForeground": "#667687", // TO-CHECK
-      "panelTitle.inactiveForeground": OneHunterColors.sharkActive,
-      "peekView.border": OneHunterColors.frenchRose,
-      "peekViewEditor.background": OneHunterColors.black0,
-      "peekViewEditor.matchHighlightBackground": `${OneHunterColors.cornflowerBlue}55`,
-      "peekViewEditorGutter.background": OneHunterColors.black0,
+      "panelTitle.inactiveForeground": OneHunterColors.grayDarkOnActive,
+      "peekView.border": OneHunterColors.pinkBase,
+      "peekViewEditor.background": OneHunterColors.blackBase,
+      "peekViewEditor.matchHighlightBackground": `${OneHunterColors.blueBase}55`,
+      "peekViewEditorGutter.background": OneHunterColors.blackBase,
       // "peekViewResult.background": "#242a2f",
-      "peekViewResult.background": OneHunterColors.outerSpace,
-      "peekViewResult.fileForeground": OneHunterColors.alto,
-      "peekViewResult.lineForeground": OneHunterColors.mercury,
-      "peekViewResult.matchHighlightBackground": `${OneHunterColors.cornflowerBlue}55`,
-      "peekViewResult.selectionBackground": OneHunterColors.sharkHover,
-      "peekViewResult.selectionForeground": OneHunterColors.alto,
-      "peekViewTitle.background": OneHunterColors.black0,
+      "peekViewResult.background": OneHunterColors.blackBlue,
+      "peekViewResult.fileForeground": OneHunterColors.grayLight,
+      "peekViewResult.lineForeground": OneHunterColors.grayMedium,
+      "peekViewResult.matchHighlightBackground": `${OneHunterColors.blueBase}55`,
+      "peekViewResult.selectionBackground": OneHunterColors.grayDarkOnHover,
+      "peekViewResult.selectionForeground": OneHunterColors.grayLight,
+      "peekViewTitle.background": OneHunterColors.blackBase,
       // "peekViewTitleDescription.foreground": "#f7f7f7", // TO-CHECK
-      "peekViewTitleDescription.foreground": OneHunterColors.alto,
+      "peekViewTitleDescription.foreground": OneHunterColors.grayLight,
       // "peekViewTitleLabel.foreground": "#e0e0e0",// TO-CHECK
-      "peekViewTitleLabel.foreground": OneHunterColors.mercury,
-      "progressBar.background": OneHunterColors.cornflowerBlue,
+      "peekViewTitleLabel.foreground": OneHunterColors.grayMedium,
+      "progressBar.background": OneHunterColors.blueBase,
     },
   },
   tokenColors: {
@@ -405,44 +424,44 @@ export default {
       {
         scope: ["comment.block.documentation entity.name.type"],
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
         },
       },
       {
         scope: ["comment.block.documentation storage.type"],
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
           fontStyle: "italic",
         },
       },
       {
         scope: ["string", "punctuation.definition.string.template"],
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
         },
       },
       {
         scope: "constant.numeric",
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
         scope: "constant.language",
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
         },
       },
       {
         scope: ["constant.character", "constant.other"],
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
         },
       },
       {
         scope: "variable.language.this",
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
         },
       },
       {
@@ -453,21 +472,21 @@ export default {
           "keyword.operator.less",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
         scope: "keyword.operator",
         settings: {
-          foreground: OneHunterColors.gallery,
+          foreground: OneHunterColors.graySoft,
           fontStyle: "",
         },
       },
       {
         scope: "punctuation",
         settings: {
-          foreground: OneHunterColors.gallery,
+          foreground: OneHunterColors.graySoft,
         },
       },
       {
@@ -480,42 +499,42 @@ export default {
       {
         scope: "punctuation.definition.tag",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
           fontStyle: "",
         },
       },
       {
         scope: "string.quoted punctuation.definition.string",
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
           fontStyle: "",
         },
       },
       {
         scope: ["string.regexp", "string.regexp punctuation.definition.string"],
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
           fontStyle: "",
         },
       },
       {
         scope: "storage",
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
           fontStyle: "",
         },
       },
       {
         scope: "storage.type",
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
         scope: "entity.name.class",
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
           fontStyle: "underline",
         },
       },
@@ -529,7 +548,7 @@ export default {
           "meta.function-call.generic.python",
         ],
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
@@ -547,118 +566,118 @@ export default {
           "keyword.operator.expression",
         ],
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
         },
       },
       {
         scope: "variable.parameter",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
           fontStyle: "",
         },
       },
       {
         scope: ["source.css.scss", "source.css"],
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
           fontStyle: "",
         },
       },
       {
         scope: ["entity.other.attribute-name"],
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
           fontStyle: "",
         },
       },
       {
         scope: ["support.function", "support.variable.dom"],
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
           fontStyle: "",
         },
       },
       {
         scope: "support.constant",
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
           fontStyle: "",
         },
       },
       {
         scope: ["support.type"],
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
           fontStyle: "",
         },
       },
       {
         scope: ["support.class"],
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
           fontStyle: "",
         },
       },
       {
         scope: "invalid",
         settings: {
-          foreground: OneHunterColors.cinnabar,
+          foreground: OneHunterColors.red,
           fontStyle: "",
         },
       },
       {
         scope: "invalid.deprecated",
         settings: {
-          foreground: OneHunterColors.cinnabar,
+          foreground: OneHunterColors.red,
           background: "#664E4D",
         },
       },
       {
         scope: "invalid.illegal",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
         },
       },
       {
         scope: ["meta.diff", "meta.diff.header"],
         settings: {
-          foreground: OneHunterColors.slateGray,
+          foreground: OneHunterColors.slate,
         },
       },
       {
         scope: "markup.deleted",
         settings: {
-          foreground: OneHunterColors.alizarinCrimson,
+          foreground: OneHunterColors.redDark,
         },
       },
       {
         scope: "markup.inserted",
         settings: {
-          foreground: OneHunterColors.pear,
+          foreground: OneHunterColors.green,
         },
       },
       {
         scope: "markup.changed",
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
         scope: "constant.numeric.line-number.find-in-files - match",
         settings: {
-          foreground: `${OneHunterColors.pear}A0`,
+          foreground: `${OneHunterColors.green}A0`,
         },
       },
       {
         scope: "entity.name.filename.find-in-files",
         settings: {
-          foreground: OneHunterColors.chenin,
+          foreground: OneHunterColors.yellowLight,
         },
       },
       {
         scope: "keyword.other",
         settings: {
-          foreground: OneHunterColors.gullGray,
+          foreground: OneHunterColors.grayBlue,
         },
       },
       {
@@ -668,13 +687,13 @@ export default {
           "constant.other.color",
         ],
         settings: {
-          foreground: OneHunterColors.regentStBlue,
+          foreground: OneHunterColors.blueSoft,
         },
       },
       {
         scope: "meta.property-value punctuation.separator.key-value",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
         },
       },
       {
@@ -688,7 +707,7 @@ export default {
           "keyword.other.use-as",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
@@ -697,14 +716,14 @@ export default {
           "meta.other.inherited-class support.class.builtin",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
           fontStyle: "normal",
         },
       },
       {
         scope: "variable.other",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
           fontStyle: "normal",
         },
       },
@@ -718,14 +737,14 @@ export default {
       {
         scope: "variable.parameter.function.coffee",
         settings: {
-          foreground: OneHunterColors.regentStBlue,
+          foreground: OneHunterColors.blueSoft,
           fontStyle: "",
         },
       },
       {
         scope: "markup.deleted.git_gutter",
         settings: {
-          foreground: OneHunterColors.alizarinCrimson,
+          foreground: OneHunterColors.redDark,
         },
       },
       {
@@ -735,13 +754,13 @@ export default {
       {
         scope: "markup.changed.git_gutter",
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
         scope: "meta.template.expression",
         settings: {
-          foreground: OneHunterColors.regentStBlue,
+          foreground: OneHunterColors.blueSoft,
         },
       },
       {
@@ -751,13 +770,13 @@ export default {
           "keyword.operator.expression.typeof",
         ],
         settings: {
-          foreground: OneHunterColors.heliotrope,
+          foreground: OneHunterColors.purpleBase,
         },
       },
       {
         scope: ["entity.name.type", "support.type.python"],
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
@@ -815,38 +834,38 @@ export default {
       {
         scope: ["support.type.primitive.tsx", "support.type.primitive.ts"],
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
         },
       },
       {
         scope: "storage.modifier.tsx",
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
         scope: "entity.other.inherited-class.tsx",
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
         scope: "meta.object.member variable.other.readwrite.tsx",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
         },
       },
       /* JSON */
       {
         scope: "meta.structure.dictionary.json string.quoted.double.json",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
         },
       },
       {
         scope: "meta.structure.dictionary.value.json string.quoted.double.json",
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
         },
       },
       {
@@ -855,7 +874,7 @@ export default {
           "punctuation.definition.string",
         ],
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
         },
       },
       {
@@ -864,7 +883,7 @@ export default {
           "support.type.property-name.json",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       /* Markdown and MDX */
@@ -884,13 +903,13 @@ export default {
           "markup.raw.code.text.mdx",
         ],
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
         scope: ["entity.name.section.markdown", "entity.name.section.mdx"],
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
           fontStyle: "bold",
         },
       },
@@ -900,14 +919,14 @@ export default {
           "punctuation.definition.heading.mdx",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
           fontStyle: "bold",
         },
       },
       {
         scope: ["markup.raw.inline.markdown", "markup.raw.inline.mdx"],
         settings: {
-          foreground: OneHunterColors.regentStBlue,
+          foreground: OneHunterColors.blueSoft,
         },
       },
       {
@@ -919,7 +938,7 @@ export default {
           "punctuation.definition.entity",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
@@ -930,7 +949,7 @@ export default {
           "punctuation.definition.string.end.mdx",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
@@ -939,7 +958,7 @@ export default {
           "punctuation.definition.metadata.mdx",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
@@ -951,7 +970,7 @@ export default {
           "meta.image.inline.mdx",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
           fontStyle: "",
         },
       },
@@ -963,7 +982,7 @@ export default {
           "markup.italic.mdx",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
@@ -981,7 +1000,7 @@ export default {
       {
         scope: ["markup.raw.block.markdown", "markup.raw.block.mdx"],
         settings: {
-          foreground: OneHunterColors.regentStBlue,
+          foreground: OneHunterColors.blueSoft,
         },
       },
 
@@ -989,13 +1008,13 @@ export default {
       {
         scope: "keyword.other.rust",
         settings: {
-          foreground: OneHunterColors.heliotrope,
+          foreground: OneHunterColors.purpleBase,
         },
       },
       {
         scope: "keyword.other.fn.rust",
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       /* PHP */
@@ -1006,28 +1025,28 @@ export default {
           "keyword.other.class.php",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
         name: "PHP: Class name",
         scope: ["support.class.php"],
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
         },
       },
       {
         name: "PHP: Meta use",
         scope: ["meta.use.php"],
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
         },
       },
       /* .env, ini */
       {
         scope: "keyword.other.definition.ini",
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
         },
       },
       /* Prisma */
@@ -1035,68 +1054,68 @@ export default {
         name: "Prisma: Primitive",
         scope: "support.type.primitive.prisma",
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
         name: "Prisma: Constant",
         scope: "support.constant.constant.prisma",
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {
         name: "Prisma: Relation",
         scope: "variable.language.relations.prisma",
         settings: {
-          foreground: OneHunterColors.turquoise,
+          foreground: OneHunterColors.cyanBase,
         },
       },
       /* yml */
       {
         scope: "entity.name.tag.yaml",
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       /* java */
       {
         scope: "storage.type.java",
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
         scope: ["keyword.other.package.java", "keyword.other.import.java"],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
         scope: "storage.modifier.package.java",
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       {
         scope: "storage.modifier.import.java",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
         },
       },
       {
         scope: "punctuation.separator.java",
         settings: {
-          foreground: OneHunterColors.gallery,
+          foreground: OneHunterColors.graySoft,
         },
       },
       /* xml */
       {
         scope: "meta.tag.xml",
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
         },
       },
       /* Swift */
@@ -1106,7 +1125,7 @@ export default {
           "keyword.other.declaration-specifier.accessibility.swift",
         ],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
@@ -1118,19 +1137,19 @@ export default {
           "keyword.operator.custom.infix.swift",
         ],
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
         },
       },
       {
         scope: "variable.parameter.function.swift",
         settings: {
-          foreground: OneHunterColors.alto,
+          foreground: OneHunterColors.grayLight,
         },
       },
       {
         scope: "entity.name.function.swift",
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
@@ -1147,21 +1166,21 @@ export default {
       {
         scope: ["support.function.go"],
         settings: {
-          foreground: OneHunterColors.dodgeBlue,
+          foreground: OneHunterColors.blueDark,
           fontStyle: OneHunterColors["keyword-weight"],
         },
       },
       {
         scope: ["keyword.operator.address.go", "keyword.operator.pointer.go"],
         settings: {
-          foreground: OneHunterColors.cornflowerBlue,
+          foreground: OneHunterColors.blueBase,
         },
       },
       {
         // To quickly differentiate concurrency keywords
         scope: ["keyword.channel.go"],
         settings: {
-          foreground: OneHunterColors.heliotrope,
+          foreground: OneHunterColors.purpleBase,
         },
       },
       {
@@ -1177,14 +1196,14 @@ export default {
           "storage.type.complex.go",
         ],
         settings: {
-          foreground: OneHunterColors.saffronMango,
+          foreground: OneHunterColors.yellowBase,
         },
       },
       /* Astro */
       {
         scope: ["entity.name.tag.astro"],
         settings: {
-          foreground: OneHunterColors.frenchRose,
+          foreground: OneHunterColors.pinkBase,
         },
       },
       {

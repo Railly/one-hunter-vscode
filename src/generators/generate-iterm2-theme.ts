@@ -3,7 +3,7 @@ import xmlbuilder from "xmlbuilder";
 import { dirname, resolve } from "path";
 import themeData, { OneHunterColors } from "../themes";
 import { Theme } from "../themes/index";
-import { THEME_NAMES, THEME_VARIANTS } from "../themes/variants";
+import { THEME_NAMES, THEME_VARIANTS, ThemeVariant } from "../themes/variants";
 
 function convertToRGB(color: string): { r: number; g: number; b: number } {
   const hex = color.substring(1);
@@ -13,15 +13,16 @@ function convertToRGB(color: string): { r: number; g: number; b: number } {
   return { r, g, b };
 }
 
-function createIterm2Theme(variant: string, theme: Theme) {
+function createIterm2Theme(variant: ThemeVariant, theme: Theme) {
   const root = xmlbuilder.create("plist").att("version", "1.0").ele("dict");
   const colorObj = themeData.textColors[variant] as Record<
     keyof typeof OneHunterColors,
     string
   >;
 
-  const foregroundColor = variant === "light" ? colorObj.alto : colorObj.white;
-  const backgroundColor = colorObj.shark;
+  const foregroundColor =
+    variant === "light" ? colorObj.grayLight : colorObj.white;
+  const backgroundColor = colorObj.grayDarkBase;
   const ansi7Color = variant === "light" ? colorObj.gray : "#ffffff";
   const ansi15Color = variant === "light" ? "#ffffff" : colorObj.white;
 
@@ -30,12 +31,12 @@ function createIterm2Theme(variant: string, theme: Theme) {
     [[foregroundColor], ["Foreground Color"]],
     [[ansi15Color], ["Ansi 15 Color"]],
     [[colorObj.gray], ["Ansi 8 Color"]],
-    [[colorObj.frenchRose], ["Ansi 1 Color", "Ansi 9 Color"]],
-    [[colorObj.turquoise], ["Ansi 2 Color", "Ansi 10 Color"]],
-    [[colorObj.saffronMango], ["Ansi 3 Color", "Ansi 11 Color"]],
-    [[colorObj.cornflowerBlue], ["Ansi 4 Color", "Ansi 12 Color"]],
-    [[colorObj.heliotrope], ["Ansi 5 Color", "Ansi 13 Color"]],
-    [[colorObj.dodgeBlue], ["Ansi 6 Color", "Ansi 14 Color"]],
+    [[colorObj.pinkBase], ["Ansi 1 Color", "Ansi 9 Color"]],
+    [[colorObj.cyanBase], ["Ansi 2 Color", "Ansi 10 Color"]],
+    [[colorObj.yellowBase], ["Ansi 3 Color", "Ansi 11 Color"]],
+    [[colorObj.blueBase], ["Ansi 4 Color", "Ansi 12 Color"]],
+    [[colorObj.purpleBase], ["Ansi 5 Color", "Ansi 13 Color"]],
+    [[colorObj.blueDark], ["Ansi 6 Color", "Ansi 14 Color"]],
     [[ansi7Color], ["Ansi 7 Color"]],
     [["#000000"], ["Ansi 0 Color"]],
   ]);
