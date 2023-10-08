@@ -4,7 +4,11 @@ import { dirname, resolve } from "path";
 import themeData from "../variants";
 import { ColorKeys } from "../variants/types";
 import { Theme } from "../themes/index";
-import { THEME_NAMES, THEME_VARIANTS, ThemeVariant } from "../themes/variants";
+import {
+  THEME_NAMES,
+  THEME_VARIANTS,
+  ThemeVariant,
+} from "../variants/constants";
 
 function convertToRGB(color: string): { r: number; g: number; b: number } {
   const hex = color.substring(1);
