@@ -1,7 +1,8 @@
 import { promises as fs } from "fs";
 import xmlbuilder from "xmlbuilder";
 import { dirname, resolve } from "path";
-import themeData, { OneHunterColors } from "../themes";
+import themeData from "../variants";
+import { ColorKeys } from "../variants/types";
 import { Theme } from "../themes/index";
 import { THEME_NAMES, THEME_VARIANTS, ThemeVariant } from "../themes/variants";
 
@@ -15,10 +16,7 @@ function convertToRGB(color: string): { r: number; g: number; b: number } {
 
 function createIterm2Theme(variant: ThemeVariant, theme: Theme) {
   const root = xmlbuilder.create("plist").att("version", "1.0").ele("dict");
-  const colorObj = themeData.textColors[variant] as Record<
-    keyof typeof OneHunterColors,
-    string
-  >;
+  const colorObj = themeData.textColors[variant] as Record<ColorKeys, string>;
 
   const foregroundColor =
     variant === "light" ? colorObj.grayLight : colorObj.white;

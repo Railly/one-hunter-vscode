@@ -1,5 +1,5 @@
 import { ThemeConfiguration, TokenColor } from "./types";
-import themeData from "../themes";
+import themeData from "../variants";
 
 export function configFactory(configuration: ThemeConfiguration) {
   const rawEditorColors: (typeof themeData.editorThemes)["one-hunter"] =
