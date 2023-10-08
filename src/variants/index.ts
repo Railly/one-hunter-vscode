@@ -3,9 +3,9 @@ import {
   lightVariant,
   materialVariant,
   vercelVariant,
-} from "./text-color";
-import { oneHunterEditorTheme } from "./editor-theme/one-hunter";
-import { defaultTokenColors } from "./token-colors";
+} from "./text-colors";
+import { oneHunterEditorTheme } from "./editor-themes/one-hunter";
+import { defaultTokenColors } from "./token-colors/default";
 
 export default {
   textColors: {

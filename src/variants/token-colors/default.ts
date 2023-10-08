@@ -1,4 +1,4 @@
-import { OneHunterColorsObject } from "./data";
+import { OneHunterColorsObject } from "../data";
 
 export const defaultTokenColors = [
   {
