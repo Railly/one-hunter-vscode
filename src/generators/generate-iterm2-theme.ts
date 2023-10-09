@@ -5,9 +5,9 @@ import themeData from "../variants";
 import { ColorKeys } from "../variants/types";
 import { Theme } from "../themes/index";
 import {
-  THEME_NAMES,
-  THEME_VARIANTS,
-  ThemeVariant,
+  ONE_HUNTER_THEME_NAMES,
+  ONE_HUNTER_THEME_VARIANTS,
+  OneHunterThemeVariant,
 } from "../variants/constants";
 
 function convertToRGB(color: string): { r: number; g: number; b: number } {
@@ -18,7 +18,7 @@ function convertToRGB(color: string): { r: number; g: number; b: number } {
   return { r, g, b };
 }
 
-function createIterm2Theme(variant: ThemeVariant, theme: Theme) {
+function createIterm2Theme(variant: OneHunterThemeVariant, theme: Theme) {
   const root = xmlbuilder.create("plist").att("version", "1.0").ele("dict");
   const colorObj = themeData.textColors[variant] as Record<ColorKeys, string>;
 
@@ -70,8 +70,8 @@ async function writeXMLFile(path: string, data: string): Promise<void> {
 }
 
 async function generateIterm2Themes() {
-  THEME_VARIANTS.forEach((variant) => {
-    THEME_NAMES.forEach((themeName) => {
+  ONE_HUNTER_THEME_VARIANTS.forEach((variant) => {
+    ONE_HUNTER_THEME_NAMES.forEach((themeName) => {
       const theme = Theme.init({
         editorTheme: "one-hunter",
         variant,

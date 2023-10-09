@@ -1,6 +1,6 @@
 import { OneHunterColorsObject } from "../data";
 
-export const defaultTokenColors = [
+export const oneHunterTokenColors = [
   {
     scope: ["comment"],
     settings: {

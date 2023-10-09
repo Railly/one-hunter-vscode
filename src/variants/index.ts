@@ -3,9 +3,14 @@ import {
   lightVariant,
   materialVariant,
   vercelVariant,
+  flexokiDarkVariant,
+  flexokiLightVariant,
 } from "./text-colors";
 import { oneHunterEditorTheme } from "./editor-themes/one-hunter";
-import { defaultTokenColors } from "./token-colors/default";
+import { oneHunterTokenColors } from "./token-colors/one-hunter";
+import { flexokiEditorTheme } from "./editor-themes/flexoki";
+import { originalFlexokiTokenColors } from "./token-colors/original-flexoki";
+import { oneHunterFlexokiTokenColors } from "./token-colors/one-hunter-flexoki";
 
 export default {
   textColors: {
@@ -13,11 +18,19 @@ export default {
     material: materialVariant,
     vercel: vercelVariant,
     light: lightVariant,
+    "original-flexoki-dark": flexokiDarkVariant,
+    "original-flexoki-light": flexokiLightVariant,
+    "one-hunter-flexoki-dark": flexokiDarkVariant,
+    "one-hunter-flexoki-light": flexokiLightVariant,
   },
   editorThemes: {
     "one-hunter": oneHunterEditorTheme,
+    "original-flexoki": flexokiEditorTheme,
+    "one-hunter-flexoki": flexokiEditorTheme,
   },
   tokenColors: {
-    default: defaultTokenColors,
+    "one-hunter": oneHunterTokenColors,
+    "original-flexoki": originalFlexokiTokenColors,
+    "one-hunter-flexoki": oneHunterFlexokiTokenColors,
   },
 };

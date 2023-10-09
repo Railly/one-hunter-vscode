@@ -1,4 +1,4 @@
-type Color = `#${string}`;
+type Color = string;
 type Style = "bold";
 
 export type ColorKeys =
@@ -47,74 +47,91 @@ export type OneHunterColors = {
   [K in ColorKeys]: K extends "keyword-weight" ? Style : Color;
 };
 
-export enum FlexokiColors {
-  // Basic
-  Black = "#1E0F0F",
-  Paper = "#FFFFCF",
-
-  // Grayscale
-  Gray950 = "#1C1B1A",
-  Gray900 = "#282726",
-  Gray850 = "#343331",
-  Gray800 = "#403E3C",
-  Gray700 = "#575653",
-  Gray600 = "#6F6E69",
-  Gray500 = "#87858E",
-  Gray300 = "#B7B5AC",
-  Gray200 = "#CECDC3",
-  Gray150 = "#DAD8CE",
-  Gray100 = "#E6E4D9",
-  Gray50 = "#F2F0E5",
-
-  // Dark Tones
-  DarkRed = "#AF3209",
-  DarkOrange = "#BC5215",
-  DarkYellow = "#AD8301",
-  DarkGreen = "#668E8B",
-  DarkCyan = "#24837B",
-  DarkBlue = "#205EA6",
-  DarkPurple = "#5E4D9D",
-  DarkMagenta = "#A02F6F",
-
-  // Light Tones
-  LightRed = "#D14D41",
-  LightOrange = "#DA782C",
-  LightYellow = "#D8A215",
-  LightGreen = "#879A39",
-  LightCyan = "#3AA99F",
-  LightBlue = "#4385BE",
-  LightPurple = "#8B7EC8",
-  LightMagenta = "#CE5D97",
+export enum BaseColors {
+  Red = "Red",
+  Orange = "Orange",
+  Yellow = "Yellow",
+  Green = "Green",
+  Cyan = "Cyan",
+  Blue = "Blue",
+  Purple = "Purple",
+  Magenta = "Magenta",
 }
 
-export type FlexokiColorKeys =
-  | "Black"
-  | "Paper"
-  | "Gray950"
-  | "Gray900"
-  | "Gray850"
-  | "Gray800"
-  | "Gray700"
-  | "Gray600"
-  | "Gray500"
-  | "Gray300"
-  | "Gray200"
-  | "Gray150"
-  | "Gray100"
-  | "Gray50"
-  | "DarkRed"
-  | "DarkOrange"
-  | "DarkYellow"
-  | "DarkGreen"
-  | "DarkCyan"
-  | "DarkBlue"
-  | "DarkPurple"
-  | "DarkMagenta"
-  | "LightRed"
-  | "LightOrange"
-  | "LightYellow"
-  | "LightGreen"
-  | "LightCyan"
-  | "LightBlue"
-  | "LightPurple"
-  | "LightMagenta";
+export type Theme = "Light" | "Dark";
+
+export const flexokiColors = {
+  Black: "#100F0F",
+  Paper: "#FFFCF0",
+  Gray950: "#1C1B1A",
+  Gray900: "#282726",
+  Gray850: "#343331",
+  Gray800: "#403E3C",
+  Gray700: "#575653",
+  Gray600: "#6F6E69",
+  Gray500: "#878580",
+  Gray300: "#B7B5AC",
+  Gray200: "#CECDC3",
+  Gray150: "#DAD8CE",
+  Gray100: "#E6E4D9",
+  Gray50: "#F2F0E5",
+  Light: {
+    [BaseColors.Red]: "#AF3029",
+    [BaseColors.Orange]: "#BC5215",
+    [BaseColors.Yellow]: "#AD8301",
+    [BaseColors.Green]: "#66800B",
+    [BaseColors.Cyan]: "#24837B",
+    [BaseColors.Blue]: "#205EA6",
+    [BaseColors.Purple]: "#5E409D",
+    [BaseColors.Magenta]: "#A02F6F",
+  },
+  Dark: {
+    [BaseColors.Red]: "#D14D41",
+    [BaseColors.Orange]: "#DA702C",
+    [BaseColors.Yellow]: "#D0A215",
+    [BaseColors.Green]: "#879A39",
+    [BaseColors.Cyan]: "#3AA99F",
+    [BaseColors.Blue]: "#4385BE",
+    [BaseColors.Purple]: "#8B7EC8",
+    [BaseColors.Magenta]: "#CE5D97",
+  },
+};
+
+export type FlexokiColorKeys = keyof typeof flexokiColors | BaseColors;
+
+export enum BaseColorsAcronym {
+  Red = "re",
+  Orange = "or",
+  Yellow = "ye",
+  Green = "gr",
+  Cyan = "cy",
+  Blue = "bl",
+  Purple = "pu",
+  Magenta = "ma",
+}
+
+export type FlexokiColorPallete =
+  | "bg"
+  | "bg-2"
+  | "ui"
+  | "ui-2"
+  | "ui-3"
+  | "tx-3"
+  | "tx-2"
+  | "tx"
+  | `${BaseColorsAcronym.Red}`
+  | `${BaseColorsAcronym.Red}-2`
+  | `${BaseColorsAcronym.Orange}`
+  | `${BaseColorsAcronym.Orange}-2`
+  | `${BaseColorsAcronym.Yellow}`
+  | `${BaseColorsAcronym.Yellow}-2`
+  | `${BaseColorsAcronym.Green}`
+  | `${BaseColorsAcronym.Green}-2`
+  | `${BaseColorsAcronym.Cyan}`
+  | `${BaseColorsAcronym.Cyan}-2`
+  | `${BaseColorsAcronym.Blue}`
+  | `${BaseColorsAcronym.Blue}-2`
+  | `${BaseColorsAcronym.Purple}`
+  | `${BaseColorsAcronym.Purple}-2`
+  | `${BaseColorsAcronym.Magenta}`
+  | `${BaseColorsAcronym.Magenta}-2`;

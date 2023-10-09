@@ -32,7 +32,7 @@ public class ChessGameLog
   /**
    * Adds a new line of text to the log.
    * 
-   * @param s
+   * @params
    *          the line of text to add
    */
   public void addToLog(String s) {

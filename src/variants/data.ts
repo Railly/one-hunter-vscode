@@ -1,4 +1,4 @@
-import { ColorKeys } from "./types";
+import { ColorKeys, FlexokiColorPallete } from "./types";
 
 export const OneHunterColorsObject: Record<ColorKeys, ColorKeys> = {
   white: "white",
@@ -41,4 +41,34 @@ export const OneHunterColorsObject: Record<ColorKeys, ColorKeys> = {
   "entity.name.tag.tsx": "entity.name.tag.tsx",
   "support.class.component.tsx": "support.class.component.tsx",
   "keyword-weight": "keyword-weight",
+};
+
+export const FlexokiColorsObject: Record<
+  FlexokiColorPallete,
+  FlexokiColorPallete
+> = {
+  bg: "bg",
+  "bg-2": "bg-2",
+  ui: "ui",
+  "ui-2": "ui-2",
+  "ui-3": "ui-3",
+  tx: "tx",
+  "tx-2": "tx-2",
+  "tx-3": "tx-3",
+  re: "re",
+  "re-2": "re-2",
+  or: "or",
+  "or-2": "or-2",
+  ye: "ye",
+  "ye-2": "ye-2",
+  gr: "gr",
+  "gr-2": "gr-2",
+  cy: "cy",
+  "cy-2": "cy-2",
+  bl: "bl",
+  "bl-2": "bl-2",
+  pu: "pu",
+  "pu-2": "pu-2",
+  ma: "ma",
+  "ma-2": "ma-2",
 };

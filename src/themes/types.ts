@@ -8,7 +8,7 @@ export interface TokenColor {
 }
 
 export interface ThemeConfiguration {
-  editorTheme: string;
+  editorTheme: "one-hunter" | "original-flexoki" | "one-hunter-flexoki";
   variant: string;
 }
 
