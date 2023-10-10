@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<plist version="1.0">
+  <dict>
+    <key>Background Color</key>
+    <dict>
+      <key>Color Space</key>
+      <string>sRGB</string>
+      <key>Red Component</key>
+      <real>0.09803921568627451</real>
+      <key>Green Component</key>
+      <real>0.11372549019607843</real>
+      <key>Blue Component</key>
+      <real>0.12941176470588237</real>
+    </dict>
+  </dict>
+</plist>

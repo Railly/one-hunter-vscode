@@ -109,6 +109,7 @@ const [a, b, c] = [1, 2, 3];
 
 module.exports = leftpad;
 
+
 function leftpad(str, len, ch) {
   str = String(str);
   var i = -1;

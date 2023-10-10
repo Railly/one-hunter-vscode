@@ -3,7 +3,7 @@
   "displayName": "One Hunter Theme",
   "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
   "publisher": "RaillyHugo",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -31,6 +31,26 @@
         "label": "One Hunter Theme Light",
         "uiTheme": "vs",
         "path": "./themes/OneHunter-Light-color-theme.json"
+      },
+      {
+        "label": "One Hunter Flexoki Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/OneHunter-Flexoki-Dark-color-theme.json"
+      },
+      {
+        "label": "One Hunter Flexoki Light",
+        "uiTheme": "vs",
+        "path": "./themes/OneHunter-Flexoki-Light-color-theme.json"
+      },
+      {
+        "label": "Flexoki Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Flexoki-Dark-color-theme.json"
+      },
+      {
+        "label": "Flexoki Light",
+        "uiTheme": "vs",
+        "path": "./themes/Flexoki-Light-color-theme.json"
       }
     ]
   },
@@ -45,13 +65,21 @@
           "classic",
           "material",
           "vercel",
-          "light"
+          "light",
+          "one-hunter-flexoki-dark",
+          "one-hunter-flexoki-light",
+          "original-flexoki-dark",
+          "original-flexoki-light"
         ],
         "enumDescriptions": [
-          "Classic theme",
-          "Material theme",
-          "Vercel theme",
-          "Light theme"
+          "Classic",
+          "Material",
+          "Vercel",
+          "Light",
+          "One Hunter Flexoki Dark",
+          "One Hunter Flexoki Light",
+          "Flexoki Dark",
+          "Flexoki Light"
         ],
         "description": "Select the theme variant"
       }
@@ -65,7 +93,8 @@
     "one dark",
     "one dark pro",
     "vercel",
-    "vercel theme"
+    "vercel theme",
+    "flexoki"
   ],
   "icon": "icon.png",
   "homepage": "https://github.com/Railly/one-hunter-vscode/blob/main/README.md",
@@ -77,8 +106,8 @@
     "url": "https://github.com/Railly/one-hunter-vscode.git"
   },
   "scripts": {
-    "generate:vscode": "ts-node --project scripts/tsconfig.json scripts/generate-theme.ts",
-    "generate:iterm2": "ts-node --project scripts/tsconfig.json scripts/generate-iterm2-theme.ts",
+    "generate:vscode": "ts-node --project src/tsconfig.json src/generators/generate-theme.ts",
+    "generate:iterm2": "ts-node --project src/tsconfig.json src/generators/generate-iterm2-theme.ts",
     "generate": "npm run generate:vscode && npm run generate:iterm2",
     "build:ts": "tsc -p src",
     "build:theme": "npm run generate",

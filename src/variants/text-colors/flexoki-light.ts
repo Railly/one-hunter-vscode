@@ -1,0 +1,28 @@
+import { FlexokiColorPallete, flexokiColors } from "../types";
+
+export const flexokiLightVariant: Record<FlexokiColorPallete, string> = {
+  bg: flexokiColors.Paper,
+  "bg-2": flexokiColors.Gray50,
+  ui: flexokiColors.Gray100,
+  "ui-2": flexokiColors.Gray150,
+  "ui-3": flexokiColors.Gray200,
+  tx: flexokiColors.Black,
+  "tx-2": flexokiColors.Gray600,
+  "tx-3": flexokiColors.Gray300,
+  re: flexokiColors.Dark.Red,
+  "re-2": flexokiColors.Light.Red,
+  or: flexokiColors.Dark.Orange,
+  "or-2": flexokiColors.Light.Orange,
+  ye: flexokiColors.Dark.Yellow,
+  "ye-2": flexokiColors.Light.Yellow,
+  gr: flexokiColors.Dark.Green,
+  "gr-2": flexokiColors.Light.Green,
+  cy: flexokiColors.Dark.Cyan,
+  "cy-2": flexokiColors.Light.Cyan,
+  bl: flexokiColors.Dark.Blue,
+  "bl-2": flexokiColors.Light.Blue,
+  pu: flexokiColors.Dark.Purple,
+  "pu-2": flexokiColors.Light.Purple,
+  ma: flexokiColors.Dark.Magenta,
+  "ma-2": flexokiColors.Light.Magenta,
+};

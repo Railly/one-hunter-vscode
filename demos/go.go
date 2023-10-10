@@ -11,7 +11,6 @@ import (
 	"strconv"
 	"sync"
 	"time"
-
 	"github.com/ian-kent/linkio"
 )
 

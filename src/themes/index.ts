@@ -1,4 +1,4 @@
-import { ThemeConfiguration, TokenColor } from "./types";
+import { ThemeConfiguration } from "./types";
 import { configFactory } from "./utils";
 
 export class Theme {
@@ -13,7 +13,7 @@ export class Theme {
     this.tokenColors = themeTokens.tokenColors;
   }
 
-  static init(config: ThemeConfiguration): Theme {
+  static init(config: ThemeConfiguration) {
     return new Theme(config);
   }
 }

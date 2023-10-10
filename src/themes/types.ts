@@ -1,5 +1,3 @@
-import { OneHunterColors } from "../themes";
-
 export interface TokenColor {
   name?: string;
   scope: string | string[];
@@ -10,7 +8,7 @@ export interface TokenColor {
 }
 
 export interface ThemeConfiguration {
-  editorTheme: string;
+  editorTheme: "one-hunter" | "original-flexoki" | "one-hunter-flexoki";
   variant: string;
 }
 
