@@ -30,6 +30,8 @@ A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 
 ---
 
+## One Hunter Variants
+
 ### Material
 
 ![image-3](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/material.png)
@@ -42,14 +44,25 @@ A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 
 ![image-5](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/light.png)
 
-## Roadmap
+### One Hunter Flexoki Dark
 
-- [ ] Add screenshots for all supported languages
-- [ ] Add support for more languages (C#, C++, Ruby, etc.)
-- [x] Add more variants
-  - [x] Material
-  - [x] Vercel
-  - [x] Light
+![One Hunter Flexoki Dark](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-flexoki-dark.png)
+
+### One Hunter Flexoki Light
+
+![One Hunter Flexoki Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-flexoki-light.png)
+
+## Flexoki
+
+A port of [Flexoki](https://github.com/kepano/flexoki) inky color scheme for VSCode.
+
+### Flexoki Dark
+
+![Original Flexoki Dark](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/flexoki-dark.png)
+
+### Flexoki Light
+
+![Original Flexoki Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/flexoki-light.png)
 
 ## Supported Languages
 
@@ -65,6 +78,7 @@ A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 - Go
 - Rust
 - Prisma
+- Swift
 
 ## Contributing
 

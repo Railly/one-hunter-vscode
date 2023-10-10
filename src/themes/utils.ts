@@ -6,9 +6,6 @@ export function configFactory(configuration: ThemeConfiguration) {
     | "original-flexoki"
     | "one-hunter"];
   let tokenColors: TokenColor[];
-  console.log({
-    configuration,
-  });
   switch (configuration.editorTheme) {
     case "one-hunter":
       const rawEditorColors: (typeof themeData.editorThemes)["one-hunter"] =

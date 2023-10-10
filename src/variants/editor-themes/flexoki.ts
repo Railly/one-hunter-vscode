@@ -91,7 +91,7 @@ export const flexokiEditorTheme = {
   "terminal.ansiRed": FlexokiColorsObject.re,
   "terminal.ansiWhite": FlexokiColorsObject.tx,
   "terminal.ansiYellow": FlexokiColorsObject.ye,
-  "terminal.background": FlexokiColorsObject["ui-2"],
+  "terminal.background": FlexokiColorsObject["bg-2"],
   "terminal.foreground": FlexokiColorsObject.tx,
 
   /* Git */
