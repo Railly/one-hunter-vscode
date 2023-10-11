@@ -121,9 +121,9 @@ export const originalFlexokiTokenColors = [
     },
   },
   {
-    scope: "punctuation",
+    scope: ["punctuation", "meta.brace"],
     settings: {
-      foreground: FlexokiColorsObject["tx"],
+      foreground: FlexokiColorsObject["tx-2"],
     },
   },
   {
@@ -136,7 +136,7 @@ export const originalFlexokiTokenColors = [
   {
     scope: "punctuation.definition.tag",
     settings: {
-      foreground: FlexokiColorsObject["tx"],
+      foreground: FlexokiColorsObject["tx-2"],
       fontStyle: "",
     },
   },

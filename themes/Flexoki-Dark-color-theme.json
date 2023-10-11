@@ -277,9 +277,12 @@
       }
     },
     {
-      "scope": "punctuation",
+      "scope": [
+        "punctuation",
+        "meta.brace"
+      ],
       "settings": {
-        "foreground": "#CECDC3"
+        "foreground": "#878580"
       }
     },
     {
@@ -292,7 +295,7 @@
     {
       "scope": "punctuation.definition.tag",
       "settings": {
-        "foreground": "#CECDC3",
+        "foreground": "#878580",
         "fontStyle": ""
       }
     },
