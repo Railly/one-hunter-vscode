@@ -59,3 +59,12 @@ author.first_name = "Doug"
 # Prints "Doug Adams"
 fullName = author.get_full_name()
 print(fullName)
+
+def map(self, start_index: int, end_index: int):
+    return self[start_index:end_index]
+
+def slice(self, start_index: int, end_index: int):
+    return self[start_index:end_index]
+
+def reduce(self, start_index: int, end_index: int):
+    return self[start_index:end_index]
