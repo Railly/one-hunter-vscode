@@ -10,6 +10,7 @@ export default function App() {
   return (
     <div>
       <p>You clicked {count} times</p>
+      <button onClick={(e) => setCount(count + 1)}>Click me</button>
       <Button onClick={() => setCount(count + 1)}>Click me</Button>
       <Button onClick={() => setVisible(true)}>Open Modal</Button>
       <Modal

@@ -25,6 +25,8 @@ Long paragraph example with a [link](https://github.com).
 
 > Quoting this very smart phrase I've heard.
 
+---
+
 ```js
 function snippetExample() {
   return `I'm highlighted as JavaScript!`
