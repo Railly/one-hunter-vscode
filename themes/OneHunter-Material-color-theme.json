@@ -265,7 +265,8 @@
       "scope": [
         "string",
         "string.other.link",
-        "markup.inline.raw.string.markdown"
+        "markup.inline.raw.string.markdown",
+        "markup.inline.raw.code.mdx"
       ],
       "settings": {
         "foreground": "#66dfc4"
@@ -354,7 +355,7 @@
     },
     {
       "name": "urls",
-      "scope": ["markup.underline.link"],
+      "scope": ["markup.underline.link", "string.other.link.destination.mdx"],
       "settings": {
         "foreground": "#64b5f6"
       }
@@ -482,7 +483,11 @@
         "punctuation.definition.list.begin.markdown",
         "punctuation.definition.quote.begin.markdown",
         "meta.separator.markdown",
-        "entity.name.section.markdown"
+        "entity.name.section.markdown",
+        "entity.name.section.mdx",
+        "string.other.number.mdx",
+        "variable.ordered.list.mdx",
+        "variable.unordered.list.mdx"
       ],
       "settings": {
         "foreground": "#f7bc62"
@@ -524,7 +529,10 @@
     },
     {
       "name": "magenta",
-      "scope": ["punctuation.definition.heading.markdown"],
+      "scope": [
+        "punctuation.definition.heading.markdown",
+        "punctuation.definition.heading.mdx"
+      ],
       "settings": {
         "foreground": "#f06292"
       }
