@@ -60,17 +60,17 @@ A port of [Flexoki](https://github.com/kepano/flexoki) inky color scheme for VSC
 
 #### Flexoki Light
 
-![Original Flexoki Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/flexoki-light.png)j
+![Original Flexoki Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/flexoki-light.png)
 
 ### Vercel
 
 #### Vercel 2024 Dark
 
-![Vercel 2024 Dark](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel-2024-dark.png)j
+![Vercel 2024 Dark](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel-2024-dark.png)
 
 #### Vercel 2024 Light
 
-![Vercel 2024 Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel-2024-light.png)j
+![Vercel 2024 Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel-2024-light.png)
 
 ## Supported Languages
 
