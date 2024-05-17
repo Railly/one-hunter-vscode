@@ -24,45 +24,53 @@ A stylish theme inspired by Vercel Theme ▲ and One Dark Pro 🎨.
 
 ## Screenshots
 
-### Classic
+### One Hunter Variants
+
+#### Classic
 
 ![image-2](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/classic.png)
 
----
-
-## One Hunter Variants
-
-### Material
+#### Material
 
 ![image-3](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/material.png)
 
-### Vercel
+#### Vercel
 
 ![image-4](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel.png)
 
-### Light
+#### Light
 
 ![image-5](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/light.png)
 
-### One Hunter Flexoki Dark
+#### One Hunter Flexoki Dark
 
 ![One Hunter Flexoki Dark](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-flexoki-dark.png)
 
-### One Hunter Flexoki Light
+#### One Hunter Flexoki Light
 
 ![One Hunter Flexoki Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/one-hunter-flexoki-light.png)
 
-## Flexoki
+### Flexoki
 
 A port of [Flexoki](https://github.com/kepano/flexoki) inky color scheme for VSCode.
 
-### Flexoki Dark
+#### Flexoki Dark
 
 ![Original Flexoki Dark](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/flexoki-dark.png)
 
-### Flexoki Light
+#### Flexoki Light
 
-![Original Flexoki Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/flexoki-light.png)
+![Original Flexoki Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/flexoki-light.png)j
+
+### Vercel
+
+#### Vercel 2024 Dark
+
+![Vercel 2024 Dark](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel-2024-dark.png)j
+
+#### Vercel 2024 Light
+
+![Vercel 2024 Light](https://raw.githubusercontent.com/Railly/one-hunter-vscode/main/screenshots/vercel-2024-light.png)j
 
 ## Supported Languages
 
