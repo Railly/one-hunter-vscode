@@ -126,11 +126,14 @@
     "build:ts": "tsc -p src",
     "build:theme": "npm run generate",
     "build": "npm run build:ts && npm run build:theme",
-    "publish": "vsce publish",
-    "package": "vsce package"
+    "package": "vsce package",
+    "publish:ovsx": "dotenv -- bash -c 'ovsx publish -p \"$OVSX_TOKEN\"'",
+    "publish:vsce": "vsce publish",
+    "publish": "npm run publish:vsce && npm run publish:ovsx"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "dotenv-cli": "^7.4.2",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.1",
     "typescript": "^4.9.4"
