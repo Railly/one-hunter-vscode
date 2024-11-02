@@ -247,7 +247,7 @@
       "name": "localVariables",
       "scope": ["variable.other.local"],
       "settings": {
-        "foreground": "#171717"
+        "foreground": "#EDEDED"
       }
     },
     {
