@@ -803,4 +803,50 @@ export const oneHunterTokenColors = [
       fontStyle: "",
     },
   },
+  /* C++ */
+  {
+    scope: "variable.cpp",
+    settings: {
+      foreground: OneHunterColorsObject.cyanBase,
+    },
+  },
+  {
+    scope: "variable.parameter.cpp",
+    settings: {
+      foreground: OneHunterColorsObject.cyanBase,
+      fontStyle: "italic",
+    },
+  },
+  {
+    scope: "keyword.control.cpp",
+    settings: {
+      foreground: OneHunterColorsObject.pinkBase,
+    },
+  },
+  {
+    scope: "storage.type.cpp",
+    settings: {
+      foreground: OneHunterColorsObject.blueBase,
+    },
+  },
+  {
+    scope: "entity.name.function.cpp",
+    settings: {
+      foreground: OneHunterColorsObject.blueDark,
+      fontStyle: "bold",
+    },
+  },
+  {
+    scope: "string.quoted.double.cpp",
+    settings: {
+      foreground: OneHunterColorsObject.cyanBase,
+    },
+  },
+  {
+    scope: "comment.cpp",
+    settings: {
+      foreground: OneHunterColorsObject.gray,
+      fontStyle: "italic",
+
+  },
 ];
