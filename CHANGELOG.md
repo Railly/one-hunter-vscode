@@ -11,9 +11,12 @@ All notable changes to the One Hunter theme are documented here, following [Keep
 - `npm run generate` crashed on the iTerm2 step because `xmlbuilder` was never declared as a dependency. No iTerm2 theme had been produced since the script was added.
 - `vsce` and `ovsx` were called by the publish scripts but were not declared as dependencies, so publishing only worked if they happened to be installed globally.
 - The published package was 7 MB because `.vscodeignore` did not exclude `screenshots/`, `src/`, `demos/`, or `node_modules/`. It is now 57 KB. The README renders the same, since every image it references is a remote URL.
+- C++ variables rendered dark and hard to read. Diagnosis and colors by [@helloAmulya](https://github.com/helloAmulya) in [#71](https://github.com/Railly/one-hunter-vscode/pull/71) ([#70](https://github.com/Railly/one-hunter-vscode/issues/70)).
 
 ### Added
 
+- Continuous integration and a tag-driven release, so publishing is no longer manual ([#2](https://github.com/Railly/one-hunter-vscode/issues/2))
+- A C++ demo file
 - Kotlin and Ruby demo files, by [@born-in-autumn](https://github.com/born-in-autumn) ([#77](https://github.com/Railly/one-hunter-vscode/pull/77))
 - Open VSX downloads badge in the README, by [@born-in-autumn](https://github.com/born-in-autumn) ([#76](https://github.com/Railly/one-hunter-vscode/pull/76))
 - A "How themes are built" section in CONTRIBUTING, by [@slegarraga](https://github.com/slegarraga) ([#75](https://github.com/Railly/one-hunter-vscode/pull/75))
