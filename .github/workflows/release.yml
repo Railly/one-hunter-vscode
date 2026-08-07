@@ -45,6 +45,19 @@ jobs:
             exit 1
           fi
 
+      # Checked before anything is published, so a missing secret fails the
+      # job while both registries are still untouched rather than halfway
+      # through, with one published and the other not.
+      - name: Fail if a publish token is missing
+        run: |
+          missing=""
+          [ -z "${{ secrets.VSCE_PAT }}" ] && missing="$missing VSCE_PAT"
+          [ -z "${{ secrets.OVSX_PAT }}" ] && missing="$missing OVSX_PAT"
+          if [ -n "$missing" ]; then
+            echo "Missing repository secret(s):$missing"
+            exit 1
+          fi
+
       - name: Package
         run: npx vsce package --out one-hunter.vsix
 
