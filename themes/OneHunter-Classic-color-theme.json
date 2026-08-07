@@ -1,5 +1,6 @@
 {
   "name": "One Hunter Theme",
+  "semanticHighlighting": true,
   "type": "dark",
   "colors": {
     "editor.background": "#191d21",
