@@ -14,21 +14,25 @@ export function writeFile(path: string, data: unknown): Promise<void> {
 }
 
 async function generateTheme() {
+  const writes: Promise<void>[] = [];
+
   ONE_HUNTER_THEME_VARIANTS.forEach((variant) => {
     ONE_HUNTER_THEME_NAMES.forEach((themeName) => {
       const theme = Theme.init({
         editorTheme: "one-hunter",
         variant,
       });
-      writeFile(
-        join(
-          __dirname,
-          "..",
-          "..",
-          "themes",
-          `${themeName[variant]}-color-theme.json`
-        ),
-        theme
+      writes.push(
+        writeFile(
+          join(
+            __dirname,
+            "..",
+            "..",
+            "themes",
+            `${themeName[variant]}-color-theme.json`
+          ),
+          theme
+        )
       );
     });
   });
@@ -39,18 +43,25 @@ async function generateTheme() {
         editorTheme: EDITOR_DICT[variant],
         variant,
       });
-      writeFile(
-        join(
-          __dirname,
-          "..",
-          "..",
-          "themes",
-          `${themeName[variant]}-color-theme.json`
-        ),
-        theme
+      writes.push(
+        writeFile(
+          join(
+            __dirname,
+            "..",
+            "..",
+            "themes",
+            `${themeName[variant]}-color-theme.json`
+          ),
+          theme
+        )
       );
     });
   });
+
+  await Promise.all(writes);
 }
 
-generateTheme();
+generateTheme().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});

@@ -954,6 +954,48 @@
       "settings": {
         "foreground": "#E1239A"
       }
+    },
+    {
+      "scope": "variable.cpp",
+      "settings": {
+        "foreground": "#0BA463"
+      }
+    },
+    {
+      "scope": "variable.parameter.cpp",
+      "settings": {
+        "foreground": "#0BA463"
+      }
+    },
+    {
+      "scope": "keyword.control.cpp",
+      "settings": {
+        "foreground": "#E1239A"
+      }
+    },
+    {
+      "scope": "storage.type.cpp",
+      "settings": {
+        "foreground": "#0488DB"
+      }
+    },
+    {
+      "scope": "entity.name.function.cpp",
+      "settings": {
+        "foreground": "#0488DB"
+      }
+    },
+    {
+      "scope": "string.quoted.double.cpp",
+      "settings": {
+        "foreground": "#0BA463"
+      }
+    },
+    {
+      "scope": "comment.cpp",
+      "settings": {
+        "foreground": "#A8A8A8"
+      }
     }
   ]
 }
