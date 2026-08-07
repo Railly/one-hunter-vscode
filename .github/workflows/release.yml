@@ -1,0 +1,64 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run build:ts
+
+      - name: Regenerate themes
+        run: npm run generate
+
+      - name: Fail if generated output drifted from source
+        run: |
+          git diff --exit-code -- \
+            themes/OneHunter-Classic-color-theme.json \
+            themes/OneHunter-Light-color-theme.json \
+            themes/OneHunter-Vercel-color-theme.json \
+            themes/Vercel2024-Dark-color-theme.json \
+            themes/Vercel2024-Light-color-theme.json \
+            themes/iterm2/
+
+      - name: Fail if the tag does not match package.json
+        run: |
+          tag="${GITHUB_REF_NAME#v}"
+          pkg="$(node -p "require('./package.json').version")"
+          if [ "$tag" != "$pkg" ]; then
+            echo "Tag $GITHUB_REF_NAME does not match package.json version $pkg"
+            exit 1
+          fi
+
+      - name: Package
+        run: npx vsce package --out one-hunter.vsix
+
+      - name: Publish to VS Code Marketplace
+        run: npx vsce publish --packagePath one-hunter.vsix
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_PAT }}
+
+      - name: Publish to Open VSX
+        run: npx ovsx publish one-hunter.vsix
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
+
+      - name: Create GitHub release
+        run: gh release create "$GITHUB_REF_NAME" one-hunter.vsix --generate-notes
+        env:
+          GH_TOKEN: ${{ github.token }}

@@ -1,0 +1,59 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Typecheck
+        run: npm run build:ts
+
+      - name: Regenerate themes
+        run: npm run generate
+
+      # Only the themes this repo's generator owns. Material and the four
+      # Flexoki variants are produced by tinte (see CONTRIBUTING) and are not
+      # reproducible from src/, so gating them here would force reverting
+      # tinte on every run.
+      - name: Fail if generated output drifted from source
+        run: |
+          git diff --exit-code -- \
+            themes/OneHunter-Classic-color-theme.json \
+            themes/OneHunter-Light-color-theme.json \
+            themes/OneHunter-Vercel-color-theme.json \
+            themes/Vercel2024-Dark-color-theme.json \
+            themes/Vercel2024-Light-color-theme.json \
+            themes/iterm2/
+
+      - name: Package
+        run: npx vsce package --out one-hunter.vsix
+
+      - name: Verify every declared theme resolves
+        run: |
+          node -e "
+            const pkg = require('./package.json');
+            const fs = require('fs');
+            for (const t of pkg.contributes.themes) {
+              JSON.parse(fs.readFileSync(t.path, 'utf8'));
+            }
+            console.log(pkg.contributes.themes.length + ' themes valid');
+          "
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: one-hunter-vsix
+          path: one-hunter.vsix
