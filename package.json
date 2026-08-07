@@ -3,7 +3,7 @@
   "displayName": "One Hunter Theme",
   "description": "A VSCode theme inspired by Vercel Theme and One Dark Pro",
   "publisher": "RaillyHugo",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "engines": {
     "vscode": "^1.70.0"
   },
@@ -127,16 +127,19 @@
     "build:theme": "npm run generate",
     "build": "npm run build:ts && npm run build:theme",
     "package": "vsce package",
-    "publish:ovsx": "dotenv -- bash -c 'ovsx publish -p \"$OVSX_TOKEN\"'",
+    "publish:ovsx": "ovsx publish",
     "publish:vsce": "vsce publish",
     "publish": "npm run publish:vsce && npm run publish:ovsx"
   },
   "devDependencies": {
     "@types/node": "^18.11.18",
+    "@vscode/vsce": "^3.9.2",
     "dotenv-cli": "^7.4.2",
+    "ovsx": "^1.1.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.1",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.4",
+    "xmlbuilder": "^15.1.1"
   },
   "dependencies": {
     "@types/vscode": "^1.74.0"

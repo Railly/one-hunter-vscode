@@ -1,4 +1,17 @@
 .vscode/**
 .vscode-test/**
+.github/**
+node_modules/**
+src/**
+demos/**
+screenshots/**
+logo.png
 .gitignore
+.gitattributes
+tsconfig.json
+tsconfig.base.json
+global.d.ts
+package-lock.json
+CONTRIBUTING.md
 vsc-extension-quickstart.md
+**/.env

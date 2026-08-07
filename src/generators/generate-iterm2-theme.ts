@@ -70,6 +70,8 @@ async function writeXMLFile(path: string, data: string): Promise<void> {
 }
 
 async function generateIterm2Themes() {
+  const writes: Promise<void>[] = [];
+
   ONE_HUNTER_THEME_VARIANTS.forEach((variant) => {
     ONE_HUNTER_THEME_NAMES.forEach((themeName) => {
       const theme = Theme.init({
@@ -77,11 +79,17 @@ async function generateIterm2Themes() {
         variant,
       });
       const filePath = `./themes/iterm2/${themeName[variant]}.itermcolors.xml`;
-      ensureDirectoryExists(filePath);
       const xml = createIterm2Theme(variant, theme);
-      writeXMLFile(filePath, xml);
+      writes.push(
+        ensureDirectoryExists(filePath).then(() => writeXMLFile(filePath, xml))
+      );
     });
   });
+
+  await Promise.all(writes);
 }
 
-generateIterm2Themes();
+generateIterm2Themes().catch((error) => {
+  console.error(error);
+  process.exit(1);
+});
