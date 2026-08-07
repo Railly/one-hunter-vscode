@@ -46,13 +46,23 @@ export const oneHunterEditorTheme = {
   "sideBarSectionHeader.background": OneHunterColorsObject.blackBase,
   "sideBarSectionHeader.foreground": OneHunterColorsObject.grayLight,
 
+  /* Breadcrumbs */
+  "breadcrumb.background": OneHunterColorsObject.blackBase,
+  "breadcrumb.foreground": `${OneHunterColorsObject.grayLight}BB`,
+  "breadcrumb.focusForeground": OneHunterColorsObject.grayLight,
+  "breadcrumb.activeSelectionForeground": OneHunterColorsObject.grayLight,
+  "breadcrumbPicker.background": OneHunterColorsObject.blackBlue,
+
   /* Files list */
   "badge.background": OneHunterColorsObject.pinkBase,
   "badge.foreground": OneHunterColorsObject.white,
   "list.activeSelectionBackground": `${OneHunterColorsObject.pinkBase}55`,
   "list.activeSelectionForeground": OneHunterColorsObject.grayLight,
-  "list.focusBackground": OneHunterColorsObject.grayDarkOnFocus,
-  "list.hoverBackground": OneHunterColorsObject.grayDarkOnHover,
+  // Tinted from the foreground rather than the flat gray tokens, which are
+  // nearly indistinguishable from the sidebar on the darkest variants.
+  // Alpha keeps the step proportional to each variant's own contrast.
+  "list.focusBackground": `${OneHunterColorsObject.grayLight}22`,
+  "list.hoverBackground": `${OneHunterColorsObject.grayLight}14`,
   "list.inactiveSelectionBackground": OneHunterColorsObject.grayDarkBase,
 
   /* Title bar */
