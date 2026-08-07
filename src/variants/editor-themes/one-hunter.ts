@@ -46,6 +46,13 @@ export const oneHunterEditorTheme = {
   "sideBarSectionHeader.background": OneHunterColorsObject.blackBase,
   "sideBarSectionHeader.foreground": OneHunterColorsObject.grayLight,
 
+  /* Breadcrumbs */
+  "breadcrumb.background": OneHunterColorsObject.blackBase,
+  "breadcrumb.foreground": `${OneHunterColorsObject.grayLight}BB`,
+  "breadcrumb.focusForeground": OneHunterColorsObject.grayLight,
+  "breadcrumb.activeSelectionForeground": OneHunterColorsObject.grayLight,
+  "breadcrumbPicker.background": OneHunterColorsObject.blackBlue,
+
   /* Files list */
   "badge.background": OneHunterColorsObject.pinkBase,
   "badge.foreground": OneHunterColorsObject.white,
